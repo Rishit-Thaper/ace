@@ -1,0 +1,95 @@
+.feedBack{
+    background-color: whitesmoke;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 15px;
+    justify-content: center;
+}
+.alumniFB{
+    padding: 1.3rem;
+    background-color: #d9d9d9;
+    font-family: Poppins;
+    margin-left: .5rem;
+    border-radius: 15px;
+}
+.alumniFB p{
+    font-size: 0.95rem;
+}
+.name{
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    color: #20506e;
+}
+.batch{
+    color: grey;
+    padding: 0.2rem 0 0.2rem 0;
+    font-size: 0.9rem;
+}
+.feedBack img{
+    width: 30%;
+    border-radius: 15px;
+}
+.testFlex{
+    background-color: #1245593d;
+    padding: 2rem 3.5rem 2.5rem 3.5rem;
+    border-radius: 15px;
+    margin-top: 3.5rem;
+}
+.testFlex h2{
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    font-family: Poppins;
+    color: #124559;
+}
+.head{
+    font-size: 2.5rem;
+    letter-spacing: .5rem;
+    font-family: Poppins;
+    font-weight: 550;
+    text-align: center;
+}
+.head span{
+    padding: 0 .5rem 0.1rem 0.5rem;
+    border-bottom: 5px solid #0087ca;
+}
+.testimonials{
+    background-image: url(../images/testBack.jpg);
+    width: 100%;
+    min-height: 50vh;
+    background-position: center;
+    background-size:cover;
+    padding: 2rem;
+    display: block;
+    position: relative;
+}
+@media screen and (max-width:480px) {
+    .feedBack img{
+        width: 30%;
+    }
+    .testimonials{
+        background-image: url('../images/testBack480.jpg');
+    }
+    .feedBack{
+        margin: 0;
+    }
+    .alumniFB{
+        padding: 1rem;
+    }
+    .feedBack p{
+        font-size: 0.7rem;
+    }
+    .testFlex{
+        padding: 1rem 1rem 2rem 1rem;
+    }
+    .head span{
+        font-size: 1.8rem;
+    }
+    .testFlex h2{
+        color: #124559;
+        font-size: 1.8rem;
+    }
+}

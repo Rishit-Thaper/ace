@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@100;200;400&family=Roboto&family=Work+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Poppins;
+    padding: 0.5rem;
+    background-color: #304e71;
+}
+.nav{
+    width: 100%;
+    background-color: whitesmoke;
+}
+.broc button{
+    background-color: transparent;
+    font-size: 0.8rem;
+    border: none;
+    transition: ease 0.3s;
+
+    padding: 0 0.7rem 0 0.7rem;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 1px;
+}
+.broc button:hover{
+    color: #24a1e5;
+}
+.socialLinks{
+    display: flex;
+    align-items: center;
+}
+.socialLinks .link{
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    font-size: 1rem;
+    margin: 0 0.4rem 0 0.4rem;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    transition: ease-in-out 0.3s;
+
+}
+.socialLinks .link:hover{
+    background-color: white;
+    color: #304e71;
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.741);
+}
+.socialLinks button{
+    background-color: transparent;
+    color: black;
+    font-size: 1rem;
+    color: white;
+    margin-left: 0.4rem;
+    padding: 0.45rem 0.7rem 0.45rem 0.7rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: ease .3s;
+
+}
+.socialLinks button:hover{
+    background-color: #24a1e5;
+    color: #fff;
+    border: 1px solid #24a1e5;
+}
+.dropdown-content, .dropdown-content1 {
+    margin-left: 1rem;
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #304e71c3;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a,.dropdown-content1 a {
+  float: none;
+  color: black;
+  font-size: 0.9rem;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+  color: white;
+  text-align: left;
+}
+.dropdown-content a:hover,.dropdown-content1 a:hover {
+  color: #24a1e5;
+}
+.dropdown:hover .dropdown-content,.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
+.logo{
+    display: flex;
+    padding: 0.6rem 0 0.6rem 0.6rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 15%;
+    margin: 0 0 0 5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+.apply{
+    padding: 0 5rem 0 0;
+}
+.apply button{
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #24a1e5;
+    border: none;
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid #24a1e5;
+    transition: ease-in-out 0.3s;
+}
+.apply button:hover{
+    background-color: #304e71;
+    color: #fff;
+    border: 1px solid #304e71;
+}
+.navLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #304e71;
+    padding: 0.8rem;
+    border-bottom: 6px solid #24a1e5;
+}
+.navLinks button{
+    text-transform: uppercase;
+    padding: 0.5rem;
+    background-color: transparent;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+}
+.dropdown1{
+    /* padding: 0 0.8rem 0 0.8rem; */
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+.dropdown1 p:hover{
+    color: #24a1e5;
+}
+.dropdown1 span{
+    padding-left: .3rem;
+}
+.hamburger{
+    display: none;
+}
+.mobile-menu-links{
+    position: absolute;
+    z-index: 10;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    background-color: #24a1e5;
+    flex-direction: column;
+    border-radius: 0 0 15px 15px;
+}
+.mobile-menu-links p{
+    color: black;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    font-family: Poppins;
+    justify-content: center;
+}
+.mobile-menu-links p:hover{
+    color: white;
+    padding: 1.5rem;
+    justify-content: center;
+}
+@media screen and (max-width:600px){
+    .socialLinks{
+        display: none;
+    }
+    .logo img{
+        width: 30%;
+        margin: 0 0 0 2rem;
+        padding: 0.3rem 0.3rem 0.3rem 0;
+    }
+    .apply{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        color: #304e71;
+        margin-right: 20px;
+    }
+    .hamburger a{
+        text-decoration: none;
+        color: #304e71;
+        font-size: 1.5rem;
+    }
+    .navLinks{
+        display: none;
+    }
+    .mobile-menu-links{
+        position: absolute;
+        z-index: 10;
+        padding: 1.5rem;
+        width: 100%;
+        display: flex;
+        background-color: #304e71;
+        border-bottom: 4px solid white;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        border-radius: 0 0 10px 10px;
+        transition: ease 0.5s all ;
+    }
+    .mobile-menu-links button{
+        text-transform: uppercase;
+        padding: 0.5rem;
+        background-color: transparent;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border: none;
+        color: #fff;
+    }
+    .dropdown1{
+        width: 100%;
+        box-shadow: none;
+    }
+    .dropdown-content1{
+        background-color: transparent;
+        font-size: 1.5rem;
+        position: relative;
+        box-shadow: none;
+    }
+    .dropdown-content1 a{
+        /* background-color: #304e71; */
+        font-size: 1rem;
+        font-family: Poppins;
+        padding: 0.4rem;
+        font-weight: 600;
+        /* width: 100%; */
+    }
+    .dropdown-content1 a:hover{
+        color: #fff;
+    }
+}
