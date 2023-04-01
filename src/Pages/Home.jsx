@@ -100,6 +100,13 @@ export default function Home() {
 </section>
 <section>
   <Carousel/>
+  <div className="query">
+    <h2>We are always there for you.</h2>
+    <div className="queFeed">
+      <Link to="/query"><button className='queryBut'>Have a query?</button></Link>
+      <Link to="/query"><button className='feedBut'>Leave feedback</button></Link>
+    </div>
+  </div>
 </section>
     </>
   )

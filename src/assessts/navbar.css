@@ -85,6 +85,7 @@
   text-decoration: none;
   display: block;
   color: white;
+  font-family: Poppins;
   text-align: left;
 }
 .dropdown-content a:hover,.dropdown-content1 a:hover {

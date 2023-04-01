@@ -21,9 +21,11 @@ export default function Navbar() {
             <div className="dropdown">
               <button className='dropbtn'>Quick Links <span><i class="fa-solid fa-caret-down"></i></span></button>
               <div class="dropdown-content">
-                <Link to = "/">Link 1</Link>
-                <Link to = "/">Link 2</Link>
-                <Link to = "/">Link 3</Link>
+                <Link to = "/">Academic Calender</Link>
+                <Link to = "/">Careers</Link>
+                <Link to = "/">Blog</Link>
+                <Link to="/">Download Brochure</Link>
+                <Link to="/">Admission Queries</Link>
               </div>
             </div>
           </div>
@@ -44,41 +46,63 @@ export default function Navbar() {
             <div className="dropdown1">
               <button>About Us<span><i class="fa-solid fa-caret-down"></i></span></button>
                 <div class="dropdown-content1">
-                  <Link to = "/">Link 1</Link>
-                  <Link to = "/">Link 2</Link>
-                  <Link to = "/">Link 3</Link>
+                  <Link to = "/about">Mission and Vision</Link>
+                  <Link to = "/management">Management</Link>
+                  <Link to = "/about">Our Facilities</Link>
+                  <Link to = "/about">Approval & Affliation</Link>
+                  <Link to="/about">Awards & Ranking</Link>
+                  <Link to="/about">Social Responsibility </Link>
+
                 </div>
             </div>
             <div className="dropdown1">
               <button className='dropbtn'>Admissions<span><i class="fa-solid fa-caret-down"></i></span></button>
                 <div class="dropdown-content1">
-                  <Link to = "/">Link 1</Link>
-                  <Link to = "/">Link 2</Link>
-                  <Link to = "/">Link 3</Link>
+                  <Link to = "/admissions">Admissions 2023-24</Link>
+                  <Link to = "/departments">Find your Program</Link>
+                  <Link to = "/">Download Brochure</Link>
+                  <Link to = "/admissions">FEE STructure</Link>
+                  <Link to = "/admissions">Scholarship</Link>
+                  <Link to = "/admissions">Admission Procedure</Link>
+                  <Link to = "/">Admission Form</Link>
+                  <Link to = "/admissions">How to Apply</Link>
+                  <Link to = "/contact">Contact us</Link>
                 </div>
             </div>
             <div className="dropdown1">
               <button className='dropbtn'>Academics<span><i class="fa-solid fa-caret-down"></i></span></button>
                 <div class="dropdown-content1">
-                  <Link to = "/">Link 1</Link>
-                  <Link to = "/">Link 2</Link>
-                  <Link to = "/">Link 3</Link>
+                  <Link to = "/departments">Departments</Link>
+                  <Link to = "/our-collaborations">NPTEL</Link>
+                  <Link to = "/programs">ACE Skill Development Program</Link>
+                  <Link to = "/EPIC">Entrepreneurship Promotion and Incubation Council</Link>
+                  <Link to = "/">Academic Calendar</Link>
+                  <Link to = "/">Date Sheet</Link>
+                  <Link to = "/departments">Subject Specialisation</Link>
+                  <Link to = "/">Exam Guidelines</Link>
                 </div>
             </div>
             <div className="dropdown1">
               <button className='dropbtn'>Beyond ACADemICS<span><i class="fa-solid fa-caret-down"></i></span></button>
                 <div class="dropdown-content1">
-                  <Link to = "/">Link 1</Link>
-                  <Link to = "/">Link 2</Link>
-                  <Link to = "/">Link 3</Link>
+                  <Link to = "/societies">Our Societies</Link>
+                  <Link to = "/events">Co-curricular Activities</Link>
+                  <Link to = "/sports">Sports Activities</Link>
+                  <Link to = "/photo-gallery">Photo Gallery</Link>
+                  <Link to = "/alumni-meets">Alumni Meets</Link>
+                  <Link to = "/conovocations">Convocation</Link>
+                  <Link to = "/programs">Faculty & Student Development Program</Link>
+                  <Link to = "/ace-in-news">ACE in News</Link>
                 </div>
             </div>
             <div className="dropdown1">
               <button className='dropbtn'>Placements<span><i class="fa-solid fa-caret-down"></i></span></button>
                 <div class="dropdown-content1">
-                  <Link to = "/">Link 1</Link>
-                  <Link to = "/">Link 2</Link>
-                  <Link to = "/">Link 3</Link>
+                  <Link to = "/placements">Placements</Link>
+                  <Link to = "/placements">Our Recruiters</Link>
+                  <Link to = "/placements">Training & Placement Officer</Link>
+                  <Link to = "/our-collaborations">Industrial Collaborations</Link>
+                  <Link to = "/ace-in-news">PLacements News at a Glance</Link>
                 </div>
             </div>
         </div>

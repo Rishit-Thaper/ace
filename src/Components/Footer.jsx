@@ -7,14 +7,14 @@ export default function Footer() {
       <div className="programs">
           <h2>Programs</h2>
           <ul className='list'>
-            <Link to="/bba"><li>BBA <sup>NEW!</sup></li></Link>
-            <Link to="/cse"><li>Computer Science</li></Link>
-            <Link to="/ece"><li>Electronics & Communication</li></Link>
-            <Link to="/biotech"><li>Bio-Technology</li></Link>
-            <Link to="/mech"><li>Mechanical</li></Link>
+            <Link to="/departments"><li>BBA <sup>NEW!</sup></li></Link>
+            <Link to="/departments"><li>Computer Science</li></Link>
+            <Link to="/departments"><li>Electronics & Communication</li></Link>
+            <Link to="/departments"><li>Bio-Technology</li></Link>
+            <Link to="/departments"><li>Mechanical</li></Link>
             <h3>Specialization Programs</h3>
-            <Link to="/aiml"><li>Artificial & Machine Learning</li></Link>
-            <Link to="/autorobo"><li>Automation & Robitics</li></Link>
+            <Link to="/departments"><li>Artificial & Machine Learning</li></Link>
+            <Link to="/departments"><li>Automation & Robitics</li></Link>
           </ul>
         </div>
         <div className="quickLinks">
@@ -26,7 +26,7 @@ export default function Footer() {
             <li><a href="" download = "brochure">Download Brochure</a></li>
             <Link to="/bank"><li>Bank Details</li></Link>
             <li><a href="" download = "fees">Fee Deposit Form</a></li>
-            <Link to="/queries"><li>Admission Queries</li></Link>
+            <Link to="/admissions"><li>Admission Queries</li></Link>
             <Link to="/contact"><li>Contact Us</li></Link>
           </ul>
         </div>
@@ -36,8 +36,8 @@ export default function Footer() {
             <Link to="/student-grievence-redressal-form"><li>Student Grievance Redressal Committee</li></Link>
             <Link to="/rules-regulations"><li>College Rules & Regulations</li></Link>
             <li><a href="" download = "admission-form">Admission Form</a></li>
-            <Link to="/photos"><li>Photo Gallery</li></Link>
-            <Link to="/policy"><li>Privacy Policy</li></Link>
+            <Link to="/photo-gallery"><li>Photo Gallery</li></Link>
+            <Link to="/terms-and-conditions"><li>Privacy Policy</li></Link>
             <Link to="/terms-and-conditions"><li>Terms & Conditions</li></Link>
             <Link to="/management"><li>Management</li></Link>
           </ul>
@@ -62,11 +62,11 @@ export default function Footer() {
       </div>
       <hr />
       <div className="footerSocial">
+        <h3>Connect with us</h3>
         <Link className='socialLink' to='/'><i class="fa-brands fa-facebook-f"></i></Link>
         <Link className='socialLink' to='/'><i class="fa-brands fa-instagram"></i></Link>
         <Link className='socialLink' to='/'><i class="fa-brands fa-linkedin"></i></Link>
         <Link className='socialLink' to='/'><i class="fa-solid fa-phone"></i></Link>
-        <Link className='socialLink' to='/'><i class="fa-solid fa-"></i></Link>
         <Link className='socialLink' to='/'><i class="fa-brands fa-youtube"></i></Link>
       </div>
     </section>

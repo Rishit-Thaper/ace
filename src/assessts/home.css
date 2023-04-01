@@ -371,6 +371,57 @@
 .footerSocial {
     text-align: center;
 }
+.footerSocial h3{
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+}
+.socialLink{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.query{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    font-family: Poppins;
+}
+.query h2{
+    font-size: 2rem;
+}
+.queFeed{
+    display: flex;
+    justify-content: space-between;
+}
+.queryBut, .feedBut{
+    margin-left: 2rem;
+    padding: 0.8rem;
+    background-color: #124559;
+    border: 2px solid #124559;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s ease-in-out;
+    font-size: 1.2rem;
+}
+.feedBut{
+    background-color: #fff;
+    border: 2px solid #124559;
+    color: #124559;
+}
+.queryBut:hover{
+    background-color: #fff;
+    color: #124559;
+    border: 2px solid #124559;
+
+}
+.feedBut:hover{
+    background-color: #124559;
+    color: #fff;
+}
 @media screen and (max-width:600px){
 
     .cards, .cards1{
@@ -499,5 +550,19 @@
     }
     .links{
         flex-direction: column;
+    }
+    .query{
+        flex-direction: column;
+        text-align: center;
+    }
+    .query h2{
+        font-size: 1.5rem;
+    }
+    .queFeed{
+        flex-direction: column;
+    }
+    .queryBut, .feedBut{
+        margin: 1rem;
+        padding: 0.6rem;
     }
 }
