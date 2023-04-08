@@ -1,12 +1,11 @@
 import {React,useEffect,useState} from 'react'
-import '../assessts/home.css'
-import Typewriter from 'typewriter-effect';
+import '../assessts/home.css';
+import Course from '../Components/Course';
+
 import { Link } from 'react-router-dom';
 import Footer from '../Components/Footer';
 import Carousel from '../Components/Caraousel';
-import {SiOpenai} from "react-icons/si";
-import {BsRobot} from "react-icons/bs";
-import { FcBiotech,FcElectronics,FcCommandLine,FcEngineering,FcAutomatic } from "react-icons/fc";
+
 export default function Home() {
   const[message, setMessage] = useState(0);
   const dataArray = [
@@ -31,58 +30,7 @@ export default function Home() {
           <Link to='/'><button className='contact'>Contact Us</button></Link>
         </div>
     </div>
-    <section className='course-section'>
-      <div className="courses">
-        <h1><span> 
-          <Typewriter
-              options={{
-                strings: ['Engineering', 'Empowering'],
-                autoStart: true,
-                loop: true,
-            }}
-          />
-        </span> your future</h1>
-        <h2>Discover our B.Tech programs in</h2>
-      </div>
-      <div className="course-row">
-        <div className="course">
-          <i><FcCommandLine size={60}/></i>
-          <h1>Computer Science Engg.</h1>
-          <h2>Transforming ideas into technology</h2>
-        </div>
-        <div className="course">
-          <i><FcAutomatic size={60}/></i>
-          <h1>Mechanical Engineering</h1>
-          <h2>Unleashing the Potential of Machines</h2>
-        </div>
-        <div className="course">
-          <i><FcElectronics size={60}/></i>
-          <h1>Electronics & Comm. Engg.</h1>
-          <h2>Engineering the Future of Communication</h2>
-        </div>
-        <div className="course">
-          <i><FcBiotech size={60}/></i>
-          <h1>Biotech Engineering</h1>
-          <h2>Revolutionizing Life Sciences with Technology</h2>
-        </div>
-      </div>
-      <div className='tagline'>
-      <span>Specialize, Innovate & Excel</span>
-      <h2>Explore Our Two Specialization Courses to Accelerate Your Career Growth</h2>
-      </div>
-      <div className="course-row">
-        <div className="course">
-          <i><SiOpenai size={60}/></i>
-          <h1>Artificial Intelligence and Machine Learning</h1>
-          <h2>Powering the Future with Intelligent Systems</h2>
-        </div>
-        <div className="course">
-          <i><BsRobot size={60}/></i>
-          <h1>Robotics and Automation Engineering</h1>
-          <h2>Building the Future with Automated Intelligence</h2>
-        </div>
-      </div>
-    </section>
+    <Course/>
     <section className='aboutSection'>
 
 <div className="about">
@@ -100,7 +48,7 @@ export default function Home() {
 </section>
 <section>
   <Carousel/>
-  <div className="query">
+  <div className="query-1">
     <h2>We are always there for you.</h2>
     <div className="queFeed">
       <Link to="/query"><button className='queryBut'>Have a query?</button></Link>

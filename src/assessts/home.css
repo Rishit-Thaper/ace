@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 .slide-container{
     margin-top: -2rem;
     position: relative;
@@ -382,14 +385,14 @@
     font-size: 1.5rem;
     padding: 1rem;
 }
-.query{
+.query-1{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 3rem;
     font-family: Poppins;
 }
-.query h2{
+.query-1 h2{
     font-size: 2rem;
 }
 .queFeed{
@@ -551,11 +554,11 @@
     .links{
         flex-direction: column;
     }
-    .query{
+    .query-1{
         flex-direction: column;
         text-align: center;
     }
-    .query h2{
+    .query-1 h2{
         font-size: 1.5rem;
     }
     .queFeed{
