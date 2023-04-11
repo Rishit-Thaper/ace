@@ -1,9 +1,12 @@
 import React from 'react';
-
+import Course from '../Components/Course'
 function Departments() {
   return (
-    <div>Departments</div>
-  )
+    <>
+      
+      <Course/>
+    </>
+    )
 }
 
 export default Departments;

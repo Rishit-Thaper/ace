@@ -1,78 +1,17 @@
 import {React, useEffect, useState} from 'react';
 import {FaUserGraduate, FaHandshake} from "react-icons/fa"
 import {TbBulb} from "react-icons/tb"
+import Query from '../Components/Query';
 import {GiArchiveResearch, GiBrain} from "react-icons/gi"
 import {ImBooks} from "react-icons/im"
 import Carousel from '../Components/Caraousel';
 import photo from '../images/side.jpg';
 import '../assessts/admission.css';
-function Admissions() {  
-  const[name, setName] = useState('');
-  const[email, setEmail] = useState('');
-  const[phone, setPhone] = useState('');
-  const[message, setMessage] = useState('');
-  const[course, setCourse] = useState('');
+function Admissions() {
 
-  const handleSubmit = async (e) => {
-
-    e.preventDefault();
-    
-    const formData = new FormData();
-
-    formData.append("name", name);
-    formData.append("email", email);
-    formData.append("phone", phone);
-    formData.append("message", message);
-    formData.append("course", course);
-
-    console.log(formData);
-
-    const response = await fetch("https://script.google.com/macros/s/AKfycbzwQLkCGrDYtsXWalpt7E210MLYrdWRWcPqesQ8MpPTtlZmiktcX_G0oEuyrSMv-JY/exec",
-    {method: "POST",
-    body: formData,
-    mode: 'no-cors',
-  });
-    if (response.ok){
-      alert("Form Submitted");
-    }else{
-      alert("error occured");
-    }
-
-  }
   return (
     <>
-    <div className="query">
-        <div className="queryTagline">
-            <h1>Have a query?</h1>
-            <h1>Get it resolved</h1>
-            <h3>We are always there for you...</h3>
-        </div>
-        <div className="queryForm">
-            <h3>Enter your details</h3>
-            <form className="form" onSubmit={handleSubmit}>
-                <label htmlFor="Name">Name</label><br />
-                <input className='inputField' type="text" required name='Name' value={name} onChange={(e)=>setName(e.target.value)} placeholder='eg. Raj'/><br />
-                <label htmlFor="Email">Email</label><br />
-                <input className='inputField' type="email" required name='Email' value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='eg. raj123@gmail.com'/><br />
-                <label htmlFor="Phone">Phone</label><br />
-                <input className='inputField' type="tel" required name='Phone' value={phone} onChange={(e)=>setPhone(e.target.value)} placeholder='eg. 7778889999' /><br />
-                <label htmlFor="Message">Message</label><br />
-                <input className='inputField' type="message" required name='Message' value={message} onChange={(e)=>setMessage(e.target.value)} placeholder='Your query' /><br />
-                <label for="cars">Select Course</label><br />
-                <select name="course" value={course} onChange={(e)=>setCourse(e.target.value)} id="select" required>
-                  <option value="default">Select Course</option>
-                  <option value="cse">B.Tech Computer Science and Engineering</option>
-                  <option value="ece">B.Tech Electronics and Communication Engineering</option>
-                  <option value="me">B.Tech Mechanical Engineering</option>
-                  <option value="bt">B.Tech Biotech Engineering</option>
-                  <option value="aiml">B.Tech Artificial Intelligence & Machine Learing</option>
-                  <option value="robo">B.Tech Automation & Robotics</option>
-                  <option value="bba">Bachelor of Business Administration</option>
-                </select><br />
-                <button id='submit' type='submit'>Submit</button>
-            </form>
-        </div>
-    </div>
+    <Query/>
     <section className='parent'>
       <div className="child">
         <div className="admit">
@@ -150,6 +89,21 @@ function Admissions() {
             </ul>
           </div>
         </div>
+        </div>
+        <div className="scholarship">
+          <div className="details">
+            <h2>Unleash your potential with SRSMT Scholarship Test- paving the way for the future engineers!</h2>
+            <p>The Sri Ram Sawarop Memorial Trust Scholarship Test is exclusively for 12th passouts aspiring to pursue engineering. It identifies and rewards exceptional academic excellence and dedication, and provides funding opportunities for their engineering education.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdAbk5_in7InfNYRe90b9H4QqTfUx0-Qzbo4lVnN1WanWZRQ/viewform">Click here to register for SRSMT-2023</a>
+            <h3>Scholarship Criteria</h3>
+            <ul>
+              <li>More than 90% : 100% Scholarship</li>
+              <li>80-90% : 90% Scholarship</li>
+              <li>70-80% : 80% Scholarship</li>
+              <li>60-70% : 70% Scholarship</li>
+              <li>50-60% : 60% Scholarship</li>
+            </ul>
+          </div>
         </div>
         <Carousel/>
     </section>

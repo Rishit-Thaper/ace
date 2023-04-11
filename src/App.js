@@ -9,12 +9,14 @@ import Departments from './Pages/Departments';
 import Contact from './Pages/Contact';
 import Footer from './Components/Footer';
 import {BrowserRouter,Route,Routes}from "react-router-dom";
+import Query from './Components/Query';
 function App() {
   return (
     <>
     <BrowserRouter>
       <Navbar/>
       <Routes>
+        <Route path='/query' element={<Query/>}/>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/acadmics' element={<Academics/>}/>

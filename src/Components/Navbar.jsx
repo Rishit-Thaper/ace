@@ -63,9 +63,7 @@ export default function Navbar() {
                   <Link to = "/">Download Brochure</Link>
                   <Link to = "/admissions">FEE STructure</Link>
                   <Link to = "/admissions">Scholarship</Link>
-                  <Link to = "/admissions">Admission Procedure</Link>
                   <Link to = "/">Admission Form</Link>
-                  <Link to = "/admissions">How to Apply</Link>
                   <Link to = "/contact">Contact us</Link>
                 </div>
             </div>
