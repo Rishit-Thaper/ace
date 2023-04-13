@@ -159,7 +159,7 @@ select:focus{
     color: #124559;
 }
 .proSublist li{
-    line-height: 40px;
+    line-height: 50px;
     font-size: 1.2rem;
     list-style-type: circle;
     color: #0f3646;
@@ -188,11 +188,13 @@ select:focus{
 }
 .details h2{
     color: #275080;
+    line-height: 60px;
     font-size: 2.6rem;
 }
 .details p{
     padding: 1rem 0 0.5rem 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 50px;
 }
 .details a{
     font-size: 1.2rem;
@@ -209,6 +211,7 @@ select:focus{
 .details li{
     font-size: 1.3rem;
     list-style-type: circle;
+    line-height: 40px;
 }
 .details a:hover{
     text-decoration: underline;

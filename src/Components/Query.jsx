@@ -41,7 +41,7 @@ export default function Query() {
       }
     }
   return (
-    <div className="query">
+    <div className="query" style={{borderBottom:"5px solid #24a1e5"}}>
     <div className="queryTagline">
         <h1>Have a query?</h1>
         <h1>Get it resolved</h1>

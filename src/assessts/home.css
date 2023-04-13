@@ -122,6 +122,9 @@ html{
     padding: .8rem 0 0.8rem 0;
     border-bottom: 1px solid #24a1e5;
 }
+.course h1:hover{
+    color: #0087ca;
+}
 .course h2{
     font-size: 0.9rem;
     padding: 1rem 0 1rem 0;
@@ -146,9 +149,10 @@ html{
     padding: 2.5rem;
 }
 .tagline h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: Poppins;
-    padding: 2rem;
+    padding:3rem 3rem 0 3rem;
+    color: #20506e;
     text-align: center;
 }
 .tagline span{
@@ -440,12 +444,13 @@ html{
     font-size: 1.5rem;
     padding-left: 47rem;
     padding-top: 3rem;
+    line-height: 50px;
     padding-right: 3rem;
 }
 .new-course h3{
     text-align: center;
     padding-bottom: 2rem;
-
+    color: #0087ca;
     padding-left: 45rem;
     padding-top: 6rem;
     font-size: 1.5rem;

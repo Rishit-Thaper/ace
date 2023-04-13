@@ -40,6 +40,10 @@ export default function Footer() {
             <Link to="/terms-and-conditions"><li>Privacy Policy</li></Link>
             <Link to="/terms-and-conditions"><li>Terms & Conditions</li></Link>
             <Link to="/management"><li>Management</li></Link>
+            <h2>Affiliations</h2>
+            <Link to="/departments"><li>NAAC</li></Link>
+            <Link to="/departments"><li>NIRF</li></Link>
+            <Link to="/departments"><li>NATS</li></Link>
           </ul>
         </div>
         <div className="touchUs">
@@ -68,6 +72,7 @@ export default function Footer() {
         <Link className='socialLink' to='/'><i class="fa-brands fa-linkedin"></i></Link>
         <Link className='socialLink' to='/'><i class="fa-solid fa-phone"></i></Link>
         <Link className='socialLink' to='/'><i class="fa-brands fa-youtube"></i></Link>
+        <p style={{color:"white", paddingTop:"2rem"}}>©All rights reserved 2023</p>
       </div>
     </section>
   )
