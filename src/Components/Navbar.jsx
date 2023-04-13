@@ -5,6 +5,117 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const[showNav, setShowNav] = useState(false);
+  const [showDropdown1, setShowDropdown1] = useState(false);
+  const [showDropdown2, setShowDropdown2] = useState(false);
+  const [showDropdown3, setShowDropdown3] = useState(false);
+  const [showDropdown4, setShowDropdown4] = useState(false);
+  const [showDropdown5, setShowDropdown5] = useState(false);
+  const [showDropdown6, setShowDropdown6] = useState(false);
+
+  const [hoverDropdown1, setHoverDropdown1] = useState(false);
+  const [hoverDropdown2, setHoverDropdown2] = useState(false);
+  const [hoverDropdown3, setHoverDropdown3] = useState(false);
+  const [hoverDropdown4, setHoverDropdown4] = useState(false);
+  const [hoverDropdown5, setHoverDropdown5] = useState(false);
+  const [hoverDropdown6, setHoverDropdown6] = useState(false);
+
+  const handleMouseEnterDropdown1 = () => {
+    setHoverDropdown1(true);
+  };
+  const handleLinkClick = () => {
+    setShowNav(false);
+  }
+  const handleMouseLeaveDropdown1 = () => {
+    setHoverDropdown1(false);
+  };
+  const handleMouseEnterDropdown2 = () => {
+    setHoverDropdown2(true);
+  };
+
+  const handleMouseLeaveDropdown2= () => {
+    setHoverDropdown2(false);
+  };
+  const handleMouseEnterDropdown3 = () => {
+    setHoverDropdown3(true);
+  };
+
+  const handleMouseLeaveDropdown3 = () => {
+    setHoverDropdown3(false);
+  };
+  const handleMouseEnterDropdown4 = () => {
+    setHoverDropdown4(true);
+  };
+
+  const handleMouseLeaveDropdown4 = () => {
+    setHoverDropdown4(false);
+  };
+  const handleMouseEnterDropdown5 = () => {
+    setHoverDropdown5(true);
+  };
+
+  const handleMouseLeaveDropdown5 = () => {
+    setHoverDropdown5(false);
+  };
+    const handleMouseEnterDropdown6 = () => {
+    setHoverDropdown6(true);
+  };
+
+  const handleMouseLeaveDropdown6 = () => {
+    setHoverDropdown6(false);
+  };
+
+  const handleDropdown1 = () => {
+    setShowDropdown1(!showDropdown1);
+    setShowDropdown2(false);
+    setShowDropdown3(false);
+    setShowDropdown4(false);
+    setShowDropdown5(false);
+    setShowDropdown6(false);
+  };
+
+  const handleDropdown2 = () => {
+    setShowDropdown2(!showDropdown2);
+    setShowDropdown1(false);
+    setShowDropdown3(false);
+    setShowDropdown4(false);
+    setShowDropdown5(false);
+    setShowDropdown6(false);
+  };
+
+  const handleDropdown3 = () => {
+    setShowDropdown3(!showDropdown3);
+    setShowDropdown1(false);
+    setShowDropdown2(false);
+    setShowDropdown4(false);
+    setShowDropdown5(false);
+    setShowDropdown6(false);
+  };
+
+  const handleDropdown4 = () => {
+    setShowDropdown4(!showDropdown4);
+    setShowDropdown1(false);
+    setShowDropdown2(false);
+    setShowDropdown3(false);
+    setShowDropdown5(false);
+    setShowDropdown6(false);
+  };
+
+  const handleDropdown5 = () => {
+    setShowDropdown5(!showDropdown5);
+    setShowDropdown1(false);
+    setShowDropdown2(false);
+    setShowDropdown3(false);
+    setShowDropdown4(false);
+    setShowDropdown6(false);
+  };
+  const handleDropdown6 = () => {
+    setShowDropdown6(!showDropdown6);
+    setShowDropdown1(false);
+    setShowDropdown2(false);
+    setShowDropdown3(false);
+    setShowDropdown4(false);
+    setShowDropdown5(false);
+  };
   return (
     <div className='main-nav'>
       <div className="social">
@@ -18,15 +129,15 @@ export default function Navbar() {
             <Link className='link' to='/'><i class="fa-brands fa-instagram"></i></Link>
             <Link className='link' to='/'><i class="fa-brands fa-linkedin"></i></Link>
             <Link className='link' to='/'><i class="fa-solid fa-phone"></i></Link>
-            <div className="dropdown">
-              <button className='dropbtn'>Quick Links <span><i class="fa-solid fa-caret-down"></i></span></button>
-              <div class="dropdown-content">
+            <div className="dropdown" onMouseEnter={handleMouseEnterDropdown6} onMouseLeave={handleMouseLeaveDropdown6}>
+              <button onClick={handleDropdown6} className='dropbtn'>Quick Links <span><i class="fa-solid fa-caret-down"></i></span></button>
+              {showDropdown6 || hoverDropdown6 ? (<div className="dropdown-content" onMouseEnter={handleMouseEnterDropdown6} onMouseLeave={handleMouseLeaveDropdown6}>
                 <Link to = "/">Academic Calender</Link>
                 <Link to = "/">Careers</Link>
                 <Link to = "/">Blog</Link>
                 <Link to="/">Download Brochure</Link>
                 <Link to="/">Admission Queries</Link>
-              </div>
+              </div>):null}
             </div>
           </div>
       </div>
@@ -43,65 +154,64 @@ export default function Navbar() {
             <h1>Ambala College of Engineering and Applied Research</h1> */}
         </div>
         <div className={showNav ? "navLinks mobile-menu-links" : "navLinks"} id='navLinks'>
-            <div className="dropdown1">
-              <button>About Us<span><i class="fa-solid fa-caret-down"></i></span></button>
-                <div class="dropdown-content1">
-                  <Link to = "/about">Mission and Vision</Link>
-                  <Link to = "/management">Management</Link>
-                  <Link to = "/about">Our Facilities</Link>
-                  <Link to = "/about">Approval & Affliation</Link>
-                  <Link to="/about">Awards & Ranking</Link>
-                  <Link to="/about">Social Responsibility </Link>
-
-                </div>
+            <div className="dropdown1"onMouseEnter={handleMouseEnterDropdown1} onMouseLeave={handleMouseLeaveDropdown1}>
+              <button onClick={handleDropdown1}>About Us<span><i class="fa-solid fa-caret-down"></i></span></button>
+              {showDropdown1 || hoverDropdown1 ? (<div className="dropdown-content1" onMouseEnter={handleMouseEnterDropdown1} onMouseLeave={handleMouseLeaveDropdown1}>
+                  <Link onClick={handleLinkClick} to = "/about">Mission and Vision</Link>
+                  <Link onClick={handleLinkClick} to = "/management">Management</Link>
+                  <Link onClick={handleLinkClick} to = "/about">Our Facilities</Link>
+                  <Link onClick={handleLinkClick} to = "/about">Approval & Affliation</Link>
+                  <Link onClick={handleLinkClick} to="/about">Awards & Ranking</Link>
+                  <Link onClick={handleLinkClick} to="/about">Social Responsibility </Link>
+                </div>): null}
             </div>
-            <div className="dropdown1">
-              <button className='dropbtn'>Admissions<span><i class="fa-solid fa-caret-down"></i></span></button>
-                <div class="dropdown-content1">
-                  <Link to = "/admissions">Admissions 2023-24</Link>
-                  <Link to = "/departments">Find your Program</Link>
-                  <Link to = "/">Download Brochure</Link>
-                  <Link to = "/admissions">FEE STructure</Link>
-                  <Link to = "/admissions">Scholarship</Link>
-                  <Link to = "/">Admission Form</Link>
-                  <Link to = "/contact">Contact us</Link>
-                </div>
+            <div className="dropdown1" onMouseEnter={handleMouseEnterDropdown2} onMouseLeave={handleMouseLeaveDropdown2}>
+              <button onClick={handleDropdown2} className='dropbtn'>Admissions<span><i class="fa-solid fa-caret-down"></i></span></button>
+              {showDropdown2 || hoverDropdown2 ? (<div className="dropdown-content1" onMouseEnter={handleMouseEnterDropdown2} onMouseLeave={handleMouseLeaveDropdown2}>
+                  <Link onClick={handleLinkClick} to = "/admissions">Admissions 2023-24</Link>
+                  <Link onClick={handleLinkClick} to = "/departments">Find your Program</Link>
+                  <Link onClick={handleLinkClick} to = "/">Download Brochure</Link>
+                  <Link onClick={handleLinkClick} to = "/admissions">FEE STructure</Link>
+                  <Link onClick={handleLinkClick} to = "/admissions">Scholarship</Link>
+                  <Link onClick={handleLinkClick} to = "https://www.ambalacollege.com/wp-content/uploads/2018/06/BtechAdmissionForm.pdf">Admission Form</Link>
+                  <Link onClick={handleLinkClick} to = "/contact">Contact us</Link>
+                </div>):null}
             </div>
-            <div className="dropdown1">
-              <button className='dropbtn'>Academics<span><i class="fa-solid fa-caret-down"></i></span></button>
-                <div class="dropdown-content1">
-                  <Link to = "/departments">Departments</Link>
-                  <Link to = "/our-collaborations">NPTEL</Link>
-                  <Link to = "/programs">ACE Skill Development Program</Link>
-                  <Link to = "/EPIC">Entrepreneurship Promotion and Incubation Council</Link>
-                  <Link to = "/">Academic Calendar</Link>
-                  <Link to = "/">Date Sheet</Link>
-                  <Link to = "/departments">Subject Specialisation</Link>
-                  <Link to = "/">Exam Guidelines</Link>
-                </div>
+            <div className="dropdown1"onMouseEnter={handleMouseEnterDropdown3} onMouseLeave={handleMouseLeaveDropdown3}>
+              <button onClick={handleDropdown3} className='dropbtn'>Academics<span><i class="fa-solid fa-caret-down"></i></span></button>
+              {showDropdown3 || hoverDropdown3 ? (<div className="dropdown-content1" onMouseEnter={handleMouseEnterDropdown3} onMouseLeave={handleMouseLeaveDropdown3}>
+                  <Link onClick={handleLinkClick} to = "/departments">Departments</Link>
+                  <Link onClick={handleLinkClick} to = "/our-collaborations">NPTEL</Link>
+                  <Link onClick={handleLinkClick} to = "/programs">ACE Skill Development Program</Link>
+                  <Link onClick={handleLinkClick} to = "/EPIC">Entrepreneurship Promotion and Incubation Council</Link>
+                  <Link onClick={handleLinkClick} to = "/">Academic Calendar</Link>
+                  <Link onClick={handleLinkClick} to = "/">Date Sheet</Link>
+                  <Link onClick={handleLinkClick} to = "/departments">Subject Specialisation</Link>
+                  <Link onClick={handleLinkClick} to = "/">Exam Guidelines</Link>
+                </div>):null}
             </div>
-            <div className="dropdown1">
-              <button className='dropbtn'>Beyond ACADemICS<span><i class="fa-solid fa-caret-down"></i></span></button>
-                <div class="dropdown-content1">
-                  <Link to = "/societies">Our Societies</Link>
-                  <Link to = "/events">Co-curricular Activities</Link>
-                  <Link to = "/sports">Sports Activities</Link>
-                  <Link to = "/photo-gallery">Photo Gallery</Link>
-                  <Link to = "/alumni-meets">Alumni Meets</Link>
-                  <Link to = "/conovocations">Convocation</Link>
-                  <Link to = "/programs">Faculty & Student Development Program</Link>
-                  <Link to = "/ace-in-news">ACE in News</Link>
-                </div>
+            <div className="dropdown1"onMouseEnter={handleMouseEnterDropdown4} onMouseLeave={handleMouseLeaveDropdown4}>
+              <button onClick={handleDropdown4} className='dropbtn'>Beyond ACADemICS<span><i class="fa-solid fa-caret-down"></i></span></button>
+              {showDropdown4 || hoverDropdown4 ? (<div className="dropdown-content1" onMouseEnter={handleMouseEnterDropdown4} onMouseLeave={handleMouseLeaveDropdown4}>
+                  <Link onClick={handleLinkClick} to = "/societies">Our Societies</Link>
+                  <Link onClick={handleLinkClick} to = "/events">Co-curricular Activities</Link>
+                  <Link onClick={handleLinkClick} to = "/sports">Sports Activities</Link>
+                  <Link onClick={handleLinkClick} to = "/photo-gallery">Photo Gallery</Link>
+                  <Link onClick={handleLinkClick} to = "/alumni-meets">Alumni Meets</Link>
+                  <Link onClick={handleLinkClick} to = "/conovocations">Convocation</Link>
+                  <Link onClick={handleLinkClick} to = "/programs">Faculty & Student Development Program</Link>
+                  <Link onClick={handleLinkClick} to = "/ace-in-news">ACE in News</Link>
+                </div>):null}
             </div>
-            <div className="dropdown1">
-              <button className='dropbtn'>Placements<span><i class="fa-solid fa-caret-down"></i></span></button>
-                <div class="dropdown-content1">
-                  <Link to = "/placements">Placements</Link>
-                  <Link to = "/placements">Our Recruiters</Link>
-                  <Link to = "/placements">Training & Placement Officer</Link>
-                  <Link to = "/our-collaborations">Industrial Collaborations</Link>
-                  <Link to = "/ace-in-news">PLacements News at a Glance</Link>
-                </div>
+            <div className="dropdown1"onMouseEnter={handleMouseEnterDropdown5} onMouseLeave={handleMouseLeaveDropdown5}>
+              <button onClick={handleDropdown5} className='dropbtn'>Placements<span><i class="fa-solid fa-caret-down"></i></span></button>
+              {showDropdown5 || hoverDropdown5 ? (<div className="dropdown-content1" onMouseEnter={handleMouseEnterDropdown5} onMouseLeave={handleMouseLeaveDropdown5}>
+                  <Link onClick={handleLinkClick} to = "/placements">Placements</Link>
+                  <Link onClick={handleLinkClick} to = "/placements">Our Recruiters</Link>
+                  <Link onClick={handleLinkClick} to = "/placements">Training & Placement Officer</Link>
+                  <Link onClick={handleLinkClick} to = "/our-collaborations">Industrial Collaborations</Link>
+                  <Link onClick={handleLinkClick} to = "/ace-in-news">PLacements News at a Glance</Link>
+                </div>):null}
             </div>
         </div>
       </div>

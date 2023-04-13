@@ -11,7 +11,6 @@ function Admissions() {
 
   return (
     <>
-    <Query/>
     <section className='parent'>
       <div className="child">
         <div className="admit">
@@ -24,6 +23,21 @@ function Admissions() {
                  tomorrow. Enroll at Ambala College of Engineering today!</p>
           </div>
             <img src={photo} alt="clgphoto" className='clgPhoto'/>
+        </div>
+        <div className="scholarship">
+          <div className="details">
+            <h2>Unleash your potential with SRSMT Scholarship Test- paving the way for the future engineers!</h2>
+            <p>The Sri Ram Sawarop Memorial Trust Scholarship Test is exclusively for 12th passouts aspiring to pursue engineering. It identifies and rewards exceptional academic excellence and dedication, and provides funding opportunities for their engineering education.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdAbk5_in7InfNYRe90b9H4QqTfUx0-Qzbo4lVnN1WanWZRQ/viewform">Click here to register for SRSMT-2023</a>
+            <h3>Scholarship Criteria</h3>
+            <ul>
+              <li>More than 90% : 100% Scholarship</li>
+              <li>80-90% : 90% Scholarship</li>
+              <li>70-80% : 80% Scholarship</li>
+              <li>60-70% : 70% Scholarship</li>
+              <li>50-60% : 60% Scholarship</li>
+            </ul>
+          </div>
         </div>
         <div className="chooseUs">
         <h1 className='chooseHead'>Why Choose Us?</h1>
@@ -90,22 +104,8 @@ function Admissions() {
           </div>
         </div>
         </div>
-        <div className="scholarship">
-          <div className="details">
-            <h2>Unleash your potential with SRSMT Scholarship Test- paving the way for the future engineers!</h2>
-            <p>The Sri Ram Sawarop Memorial Trust Scholarship Test is exclusively for 12th passouts aspiring to pursue engineering. It identifies and rewards exceptional academic excellence and dedication, and provides funding opportunities for their engineering education.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdAbk5_in7InfNYRe90b9H4QqTfUx0-Qzbo4lVnN1WanWZRQ/viewform">Click here to register for SRSMT-2023</a>
-            <h3>Scholarship Criteria</h3>
-            <ul>
-              <li>More than 90% : 100% Scholarship</li>
-              <li>80-90% : 90% Scholarship</li>
-              <li>70-80% : 80% Scholarship</li>
-              <li>60-70% : 70% Scholarship</li>
-              <li>50-60% : 60% Scholarship</li>
-            </ul>
-          </div>
-        </div>
         <Carousel/>
+        <Query/>
     </section>
     </>
   )
