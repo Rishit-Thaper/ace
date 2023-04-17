@@ -29,7 +29,7 @@ function Admissions() {
             <h2>Unleash your potential with SRSMT Scholarship Test- paving the way for the future engineers!</h2>
             <p>The Sri Ram Sawarop Memorial Trust Scholarship Test is exclusively for 12th passouts aspiring to pursue engineering. It identifies and rewards exceptional academic excellence and dedication, and provides funding opportunities for their engineering education.</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdAbk5_in7InfNYRe90b9H4QqTfUx0-Qzbo4lVnN1WanWZRQ/viewform">Click here to register for SRSMT-2023</a>
-            <h3>Scholarship Criteria</h3>
+            <h3>Scholarship Criteria <br /><span style={{fontSize:"1.5rem"}}>If scored:</span></h3>
             <ul>
               <li>More than 90% : 100% Scholarship</li>
               <li>80-90% : 90% Scholarship</li>
@@ -44,34 +44,34 @@ function Admissions() {
         <div className="reason-div">
           <div className="reason">
               <i><FaUserGraduate/></i>
-              <h3>Expert faculty for exceptional education</h3><hr />
-              <p>The college provides exceptional education with passionate faculty, innovative teaching methods, and practical experience to prepare graduates for their careers.</p>
+              <h3>Great faculty for Exceptional Education</h3><hr />
+              <p>The college provides exceptional education with passionate faculty, innovative teaching methods to prepare graduates for their careers.</p>
           </div>
           <div className="reason">
               <i><TbBulb/></i>
-              <h3>Hands-on experiential learning</h3><hr />
-              <p>Hands-on experiential learning" stresses practical experience, applying theory to real-world situations, boosting students' confidence and competence for future careers.</p>
+              <h3>Hands-on Experiential Learning</h3><hr />
+              <p>Stresses practical experience, applying theory to real-world situations, boosting students' confidence and competence for future careers.</p>
           </div>
           <div className="reason">
               <i><FaHandshake/></i>
-              <h3>Industry tie-ups for practical learning</h3><hr />
+              <h3>Industry Tie-ups for Practical Learning</h3><hr />
               <p>Industry tie-ups provide practical learning, exposing students to real-world scenarios and best practices, equipping them for successful careers.</p>
           </div>
         </div>
         <div className="reason-div">
           <div className="reason">
               <i><GiArchiveResearch/></i>
-              <h3>Innovative & research-focused ambiance</h3><hr />
-              <p>Innovative and research-focused, we equip students with latest skills and knowledge, encouraging critical thinking and problem-solving for success in future endeavors.</p>
+              <h3>Innovative & Research-Focused Ambiance</h3><hr />
+              <p>We equip students with latest skills and knowledge, encouraging critical thinking and problem-solving for success in future endeavors.</p>
           </div>
           <div className="reason">
               <i><ImBooks/></i>
-              <h3>Renowned for top-notch education</h3><hr />
+              <h3>Renowned for Top-notch Education</h3><hr />
               <p>The institution offers top-notch education with experienced faculty, advanced resources, and a commitment to excellence, preparing students for success in their fields.</p>
           </div>
           <div className="reason">
               <i><GiBrain/></i>
-              <h3>Focused on holistic development</h3><hr />
+              <h3>Focused on Holistic Development</h3><hr />
               <p>We prioritize holistic student development, fostering growth through classroom and extracurricular activities, preparing students for success in all areas.</p>
           </div>
         </div>

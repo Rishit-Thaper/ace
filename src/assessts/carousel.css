@@ -8,28 +8,28 @@
     justify-content: center;
 }
 .alumniFB{
-    padding: 1.3rem;
+    padding: 1rem;
     background-color: #d9d9d9;
     font-family: Poppins;
     margin-left: .5rem;
     border-radius: 15px;
 }
 .alumniFB p{
-    font-size: 0.95rem;
+    font-size: 0.7rem;
 }
 .name{
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: .1rem;
     color: #20506e;
 }
 .batch{
     color: grey;
     padding: 0.2rem 0 0.2rem 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 .feedBack img{
-    width: 30%;
+    width: 28%;
     border-radius: 15px;
 }
 .testFlex{
