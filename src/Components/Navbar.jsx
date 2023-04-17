@@ -73,7 +73,7 @@ export default function Navbar() {
     setShowDropdown5(false);
     setShowDropdown6(false);
   };
-
+// ajsghasghgsag
   const handleDropdown2 = () => {
     setShowDropdown2(!showDropdown2);
     setShowDropdown1(false);
