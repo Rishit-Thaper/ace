@@ -40,7 +40,7 @@ export default function Footer() {
             <Link to="/terms-and-conditions"><li>Privacy Policy</li></Link>
             <Link to="/terms-and-conditions"><li>Terms & Conditions</li></Link>
             <Link to="/management"><li>Management</li></Link>
-            <h2>Affiliations</h2>
+            <h2 style={{paddingTop:'0.6rem', paddingBottom:'0.6rem'}}>Affiliations</h2>
             <Link to="/departments"><li>NAAC</li></Link>
             <Link to="/departments"><li>NIRF</li></Link>
             <Link to="/departments"><li>NATS</li></Link>

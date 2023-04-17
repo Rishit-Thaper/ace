@@ -94,3 +94,9 @@
         font-size: 1.8rem;
     }
 }
+@media screen and (max-width:400px) {
+    #head{
+        font-size: 1.57rem;
+        letter-spacing: 5px;
+    }    
+}

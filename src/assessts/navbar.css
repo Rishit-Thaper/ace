@@ -18,7 +18,7 @@
 }
 .broc button{
     background-color: transparent;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     border: none;
     transition: ease 0.3s;
 
@@ -36,7 +36,7 @@
 }
 .socialLinks .link{
     padding: 0.4rem 0.8rem 0.4rem 0.8rem;
-    font-size: 1rem;
+    font-size: 0.75rem;
     margin: 0 0.4rem 0 0.4rem;
     border: 1px solid white;
     border-radius: 50px;
@@ -52,7 +52,7 @@
 .socialLinks button{
     background-color: transparent;
     color: black;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: white;
     margin-left: 0.4rem;
     padding: 0.45rem 0.7rem 0.45rem 0.7rem;
@@ -137,7 +137,7 @@
     text-transform: uppercase;
     padding: 0.5rem;
     background-color: transparent;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: none;
     color: white;
 }
@@ -168,14 +168,14 @@
 }
 .mobile-menu-links p{
     color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1.5rem;
     font-family: Poppins;
     justify-content: center;
 }
 .mobile-menu-links p:hover{
     color: white;
-    padding: 1.5rem;
+    padding: 1.3rem;
     justify-content: center;
 }
 @media screen and (max-width:600px){
@@ -245,5 +245,10 @@
     }
     .dropdown-content1 a:hover{
         color: #fff;
+    }
+    @media screen and (max-width:400px) {
+        .hamburger {
+            display: block;
+        }
     }
 }

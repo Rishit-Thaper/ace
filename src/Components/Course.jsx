@@ -22,7 +22,7 @@ function Course() {
         <p>Our new BBA course is designed to provide students with the knowledge and skills they need to succeed in today's competitive business world. With a focus on practical learning and real-world experience, this program will equip you with the tools you need to launch a successful business career.</p>
         <h3>Ready to launch your business career?<br /> Apply for our BBA program today and take the first step towards achieving your goals!</h3>
       </div>
-      <h2 style={{color:"#20506e", fontSize:"3rem"}}>Discover our B.Tech programs in</h2>
+      <h2 id='head01'>Discover our B.Tech programs in</h2>
     </div>
     <div className="course-row">
       <div className="course">

@@ -85,12 +85,12 @@ html{
 }
 .courses span{
     color: #24a1e5;
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: uppercase;
 }
 .courses h1{
     padding: 2rem;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .courses h2{
     padding: 0.8rem 0.8rem 0rem 2rem;
@@ -103,7 +103,7 @@ html{
     margin: 2rem;
     border-radius: 15px;
     flex-basis: 25%;
-    padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+    padding: 2rem 2rem 3.5rem 2rem;
     background-color: #fff;
     box-sizing: border-box;
     transition: all ease-out 0.5s ;
@@ -114,7 +114,7 @@ html{
     border-bottom: 4px solid #124559;
 }
 .course h1{
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     /* padding: .5rem; */
     color: #124559;
     font-weight: 600;
@@ -179,14 +179,14 @@ html{
 .aboutSection{
     background-image: linear-gradient(#124559a2,#124559a2),url(../images/ACE-Banner.jpg);
     width: 100%;
-    min-height: 60vh;
+    min-height: 80vh;
     background-position: center;
     background-size:cover;
     position: relative;
 }
 .about{
     position: absolute;
-    top: 15%;
+    top: 12%;
     display: block;
     text-align: center;
     color: white;
@@ -434,26 +434,30 @@ html{
     background-image: url("../images/banner03.png");
     background-size: cover;
     font-family: Poppins;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 .new-course h1{
     color: #0087ca;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .new-course p{
-    font-size: 1.5rem;
-    padding-left: 47rem;
-    padding-top: 3rem;
-    line-height: 50px;
-    padding-right: 3rem;
+    font-size: 1.3rem;
+    padding-left: 42rem;
+    padding-top: 1rem;
+    line-height: 40px;
+    padding-right: 2rem;
 }
 .new-course h3{
     text-align: center;
     padding-bottom: 2rem;
     color: #0087ca;
     padding-left: 45rem;
-    padding-top: 6rem;
-    font-size: 1.5rem;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+}
+#head01{
+    color: #20506e;
+    font-size: 3rem;
 }
 @media screen and (max-width:600px){
 
@@ -622,5 +626,43 @@ html{
         padding-left: 0rem;
         padding-top: 2rem;
         font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .overlay{
+        left: 16%;
+        font-family: Poppins;
+    }
+    .overlay span{
+        font-size: 5rem;
+    }
+    .courses h1{
+        padding: 0;
+        font-size: 3rem;
+    }
+    .courses h1 span{
+        font-size: 3rem;
+    }
+    .new-course h1{
+        font-size: 1.8rem;
+    }
+    .new-course p{
+        font-size: 1.25rem;
+        line-height: 35px;
+    }
+    .tagline span{
+        font-size: 2.8rem;
+    }
+    .tagline h2{
+        font-size: 1.3rem;
+        padding: .5rem 0 0 0;
+    }
+    .buttons button{
+        font-size: 1.1rem;
+        padding: 0.2rem;
+        margin: 2rem 0.5rem 0 0.5rem;
+    }
+    #head01{
+        font-size: 2rem;
     }
 }
