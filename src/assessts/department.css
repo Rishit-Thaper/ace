@@ -2,12 +2,44 @@
     padding: 2rem;
     min-height: 60vh;
     font-family: Poppins;
-    background-image: url("../images/banner01.png");
+    background-image: url("../images/banner05.png");
     position: relative;
     background-size: cover;
 }
 .department-overlay h1{
     font-size: 3rem;
     line-height: 70px;
+    color: #275080;
+}
+.department-flex{
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 4px solid #275080;
+    border-radius: 15px;
+    display: flex;
+    background-image: url("../images/banner04.png");
+    background-size: cover;
+    background-position: center;
+    justify-content: space-evenly;
+}
+.dep{
+    display: flex;
+    padding: 0rem 0.7rem 0rem 0.7rem;
+    cursor: Pointer;
+    margin: 1rem;
+    align-items: center;
+}
+.dep i{
+    padding: .8rem 0.5rem 0rem 0.5rem;
+    font-size: 3rem;
+}
+.dep h3{
+    font-size: 1.4rem;
+}
+.dep a{
+    text-decoration: none;
+    color: #24a1e5;
+}
+.dep a:hover{
     color: #275080;
 }
