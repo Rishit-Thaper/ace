@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from 'react';
+import {React} from 'react';
 import {FaUserGraduate, FaHandshake} from "react-icons/fa"
 import {TbBulb} from "react-icons/tb"
 import Query from '../Components/Query';
@@ -61,13 +61,13 @@ function Admissions() {
         <div className="reason-div">
           <div className="reason">
               <i><GiArchiveResearch/></i>
-              <h3>Innovative & Research-Focused Ambiance</h3><hr />
-              <p>We equip students with latest skills and knowledge, encouraging critical thinking and problem-solving for success in future endeavors.</p>
+              <h3>Research-oriented innovation.</h3><hr />
+              <p>Students are prepared for success by providing the latest skills and knowledge and encouraging critical thinking and problem-solving.</p>
           </div>
           <div className="reason">
               <i><ImBooks/></i>
               <h3>Renowned for Top-notch Education</h3><hr />
-              <p>The institution offers top-notch education with experienced faculty, advanced resources, and a commitment to excellence, preparing students for success in their fields.</p>
+              <p>We provide excellent education through experienced faculty, advanced resources, and a dedication to excellence, equipping students for success in their chosen fields.</p>
           </div>
           <div className="reason">
               <i><GiBrain/></i>

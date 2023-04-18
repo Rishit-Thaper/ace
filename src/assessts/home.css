@@ -31,6 +31,7 @@ html{
 .overlay{
     position: absolute;
     top:50%;
+    font-family: Poppins;
     left:25%;
     transform: translate(-50%,-50%);
     display: block;

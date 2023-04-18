@@ -1,0 +1,13 @@
+.departments{
+    padding: 2rem;
+    min-height: 60vh;
+    font-family: Poppins;
+    background-image: url("../images/banner01.png");
+    position: relative;
+    background-size: cover;
+}
+.department-overlay h1{
+    font-size: 3rem;
+    line-height: 70px;
+    color: #275080;
+}
