@@ -47,8 +47,6 @@ function Departments() {
               </div>
           </div>
         </div>
-
-
       </section>
     </>
     )

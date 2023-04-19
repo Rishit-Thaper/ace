@@ -2,9 +2,10 @@
     padding: 2rem;
     min-height: 60vh;
     font-family: Poppins;
-    background-image: url("../images/banner05.png");
+    background-image: url("../images/banner04.png");
     position: relative;
     background-size: cover;
+    background-position: center;
 }
 .department-overlay h1{
     font-size: 3rem;
@@ -14,12 +15,8 @@
 .department-flex{
     margin-top: 2rem;
     padding: 1.5rem;
-    border: 4px solid #275080;
     border-radius: 15px;
     display: flex;
-    background-image: url("../images/banner04.png");
-    background-size: cover;
-    background-position: center;
     justify-content: space-evenly;
 }
 .dep{
