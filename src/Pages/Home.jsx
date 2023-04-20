@@ -19,6 +19,9 @@ export default function Home() {
       Message:"Our institution is dedicated to meeting international benchmarks in technical education and serving as a hub for technological advancement. We believe in empowering aspiring entrepreneurs through our incubation center, providing them with modern technological knowledge and emphasizing professional ethics and moral values. Our community of forward-thinking individuals is committed to driving innovation and progress in their respective fields while striving for excellence and creativity in everything we do.",
     }
   ]
+  useEffect(() => {
+    document.title = 'ACE | Home';
+  }, []);
   return(
     <>
     <div className='main'>
