@@ -13,7 +13,7 @@ import srsmt from '../images/srsmt.webp'
 import {GiArchiveResearch, GiBrain} from "react-icons/gi"
 import {ImBooks} from "react-icons/im"
 import Carousel from '../Components/Caraousel';
-import photo from '../images/side.jpg';
+import photo from '../images/cover01.jpg';
 import '../assessts/admission.css';
 function Admissions() {
   const buttonStyle = {
@@ -69,12 +69,14 @@ const properties = {
           <div className="reason">
               <i><FaUserGraduate/></i>
               <h3>Great faculty for Exceptional Education</h3><hr />
-              <p>With committed staff and cutting-edge teaching techniques, the college offers great education that prepares graduates for successful professions.</p>
+              <p>The college provides exceptional education with passionate faculty, innovative teaching methods to prepare graduates for their careers.</p>
+              
           </div>
           <div className="reason">
               <i><TbBulb/></i>
               <h3>Hands-on Experiential Learning</h3><hr />
-              <p>Emphasises practical experience, putting theory into practise, and building students' competency for future employment.</p>
+              <p>Stresses practical experience, applying theory to real-world situations, boosting students' confidence and competence for future careers.</p>
+              
           </div>
           <div className="reason">
               <i><FaHandshake/></i>
@@ -86,7 +88,8 @@ const properties = {
           <div className="reason">
               <i><GiArchiveResearch/></i>
               <h3>Research-oriented innovation.</h3><hr />
-              <p>By supplying students with the most up-to-date skills and knowledge and promoting critical thinking and problem-solving, students are prepared for success.</p>
+              <p>Students are prepared for success by providing the latest skills and knowledge and encouraging critical thinking and problem-solving.</p>
+              
           </div>
           <div className="reason">
               <i><ImBooks/></i>
@@ -107,12 +110,13 @@ const properties = {
         <div className="reason each-fade">
               <i><FaUserGraduate/></i>
               <h3>Great faculty for Exceptional Education</h3><hr />
-              <p>The college provides exceptional education with passionate faculty, innovative teaching methods to prepare graduates for their careers.</p>
+              <p>With committed staff and cutting-edge teaching techniques, the college offers great education that prepares graduates for successful professions.</p>
+              
           </div>
           <div className="reason each-fade">
               <i><TbBulb/></i>
               <h3>Hands-on Experiential Learning</h3><hr />
-              <p>Stresses practical experience, applying theory to real-world situations, boosting students' confidence and competence for future careers.</p>
+              <p>Emphasises practical experience, putting theory into practise, and building students' competency for future employment.</p>
           </div>
           <div className="reason each-fade">
               <i><FaHandshake/></i>
@@ -122,7 +126,8 @@ const properties = {
       <div className="reason each-fade">
               <i><GiArchiveResearch/></i>
               <h3>Research-oriented innovation.</h3><hr />
-              <p>Students are prepared for success by providing the latest skills and knowledge and encouraging critical thinking and problem-solving.</p>
+              <p>By supplying students with the most up-to-date skills and knowledge and promoting critical thinking and problem-solving, students are prepared for success.</p>
+              
           </div>
           <div className="reason each-fade">
               <i><ImBooks/></i>
