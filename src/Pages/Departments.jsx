@@ -17,7 +17,7 @@ function Departments() {
           <div className="department-info">
               <div className="dep">
                   <i><GiMaterialsScience/></i>
-                  <Link to="/department/aps"><h3>Applied Science & Humanities</h3></Link>
+                  <Link to="/department/apd"><h3>Applied Science & Humanities</h3></Link>
               </div>
               <div className="dep">
                   <i><FcCommandLine/></i>

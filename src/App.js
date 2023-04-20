@@ -1,6 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar';
+import Me from './Components/Me';
+import Cse from './Components/Cse';
+import Ece from './Components/Ece';
+import Applied from './Components/Applied';
+import Bt from './Components/Bt';
+import Aiml from './Components/Aiml';
+import Auto from './Components/Auto';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Academics from './Pages/Academics';
@@ -22,6 +29,13 @@ function App() {
         <Route path='/acadmics' element={<Academics/>}/>
         <Route path='/departments' element={<Departments/>}/>
         <Route path='/admissions' element={<Admissions/>}/>
+        <Route path='/departments/cse' element={<Cse/>}/>
+        <Route path='/departments/me' element={<Me/>}/>
+        <Route path='/departments/bt' element={<Bt/>}/>
+        <Route path='/departments/ece' element={<Ece/>}/>
+        <Route path='/departments/aiml' element={<Aiml/>}/>
+        <Route path='/departments/auto-robo' element={<Auto/>}/>
+        <Route path='/departments/apd' element={<Applied/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/careers' element={<Academics/>}/>
         <Route path='/blog' element={<Academics/>}/>

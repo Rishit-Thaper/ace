@@ -58,7 +58,7 @@ function Course() {
       </div>
       <div className="course">
         <i><BsRobot size={60}/></i>
-        <Link to="/departments/auto"><h1>Robotics and Automation Engineering</h1></Link>
+        <Link to="/departments/auto-robo"><h1>Robotics and Automation Engineering</h1></Link>
         <h2>Building the Future with Automated Intelligence</h2>
       </div>
     </div>
