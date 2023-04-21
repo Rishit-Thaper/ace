@@ -12,31 +12,81 @@
     line-height: 70px;
     color: #275080;
 }
-.department-flex{
-    margin-top: 2rem;
-    padding: 1.5rem;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-evenly;
-}
 .dep{
     display: flex;
-    padding: 0rem 0.7rem 0rem 0.7rem;
-    cursor: Pointer;
-    margin: 1rem;
-    align-items: center;
+    padding: 1rem;
+    justify-content: center;
 }
-.dep i{
-    padding: .8rem 0.5rem 0rem 0.5rem;
-    font-size: 3rem;
+.dep img{
+    width: 25%;
+    border-radius: 50px;
+    padding: 1.5rem;
 }
-.dep h3{
-    font-size: 1.4rem;
-}
-.dep a{
-    text-decoration: none;
-    color: #24a1e5;
-}
-.dep a:hover{
+.dep_about h1{
+    font-size: 2rem;
+    padding: 2rem 1.5rem 1.5rem 0;
     color: #275080;
+}
+.dep_about{
+    padding-left: 1.5rem;
+}
+.dep_about p{
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 30px;
+    padding: 0 1.5rem 0 0rem;
+}
+.dep_about a{
+    font-size: 1.5rem;
+    color: #24a1e5;
+    padding: 1rem 0 0 0;
+}
+.dep_about a:hover{
+    color: #275080;
+    text-decoration: underline;
+}
+.summary{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+@media screen and (max-width:480px) {
+    .dep{
+        flex-direction: column;
+        padding: 0;
+    }
+    .dep1{
+        flex-direction: column-reverse;
+    }
+    .dep img{
+        width: 100%;
+        padding: 1rem;
+        border-radius: 30px;
+    }
+    .dep h1{
+        padding: 0;
+        font-size: 1.5rem;
+    }
+    .dep link{
+        padding-bottom: 2rem;
+    }
+    .department-overlay h1{
+        font-size: 2rem;
+        line-height: 45px;
+    }
+    .departments{
+        border-top: 5px solid #24a1e5;
+    }
+    .dep p{
+        font-size: 1rem;
+        line-height: 25px;
+        padding: 1rem 0 0 0;
+    }
+    .summary{
+        padding: 1.5rem 0 0 0;
+        font-size: 1rem;
+    }
+    .dep_about{
+        padding: 0;
+    }
 }
