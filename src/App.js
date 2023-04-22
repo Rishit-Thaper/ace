@@ -17,6 +17,7 @@ import Footer from './Components/Footer';
 import {BrowserRouter,Route,Routes}from "react-router-dom";
 import Query from './Components/Query';
 function App() {
+
   return (
     <>
     <BrowserRouter>

@@ -1,5 +1,5 @@
 import {React, useState} from 'react'
-
+import Scroll from './Scroll';
 export default function Query() {
 
     const[name, setName] = useState('');
@@ -43,6 +43,7 @@ export default function Query() {
   return (
     <div className="query" style={{borderBottom:"5px solid #24a1e5"}}>
     <div className="queryTagline">
+      <Scroll/>
         <h1>Have a query ?</h1>
         <h1>Get it resolved</h1>
         <h3>We are always there for you...</h3>

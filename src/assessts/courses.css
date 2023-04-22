@@ -23,20 +23,30 @@
     font-size: 1.1rem;
     line-height: 35px;
 }
-.lab_info h2{
+.lab_info h2,.lab_info1 h2{
     font-size: 2rem;
     color: #275080;
 }
 .lab_info{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
-.lab_info ul{
+.lab_info1{
+    display: flex;
+    align-items: center;
+}
+.lab_info ul, .lab_info1 ul{
     padding: 2rem 2rem 0rem 2rem;
 }
-.lab_info li{
+.lab_info li, .lab_info1 li{
     line-height: 35px;
     font-size: 1.2rem;
+}
+.lab_info img{
+    width: 35%;
+    border-radius: 50px;
+    padding: 2rem;
 }
 @media screen and (max-width: 480px){
     .about_dep{
@@ -46,16 +56,20 @@
     .dep_info{
         flex-direction: column-reverse;
     }
-    .dep_info img{
+    .dep_info img, .lab_info img{
         width: 100%;
         padding: 0.5rem;
         border-radius: 25px;
     }
-    .dep_info ul{
+    .dep_info ul, .lab_info ul{
         padding: 0.5rem;
     }
     .about_dep h1{
         font-size: 2rem;
         text-align: center;
+    }
+    .lab_info{
+        flex-direction: column;
+        padding: 0;
     }
 }

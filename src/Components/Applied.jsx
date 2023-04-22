@@ -1,9 +1,11 @@
-import React from 'react';
+import {React} from 'react';
 import '../assessts/courses.css';
 import applied from '../images/APPLIED.jpeg'
-export default function Applied() {;
+import Scroll from './Scroll';
+export default function Applied() {
   return (
     <div className='about_dep'>
+    <Scroll/>
       <h1>Department of Applied Science & Humanities</h1>
       <div className="dep_info">
         <ul>
@@ -18,7 +20,7 @@ export default function Applied() {;
         </ul>
         <img src={applied} alt="" />
       </div>
-      <div className="lab_info">
+      <div className="lab_info1">
         <div className="dep_lab">
           <h2>Laboratries</h2>
           <ul>

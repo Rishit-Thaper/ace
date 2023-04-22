@@ -8,14 +8,14 @@ import bt from '../images/BT_DEP.png'
 import ece from '../images/ECE_DEP.png'
 import auto from '../images/AUTO_DEP.png'
 import aiml from '../images/AIML_dEP.png'
-
+import Scroll from '../Components/Scroll'
 function Departments() {
   return (
     <>
       <section className='departments'>
         <div className="department-overlay">
           <h1>Discover Our Departments: <br/>Where Passion Meets Excellence</h1>
-          <Link></Link>
+          <Scroll/>
         </div>
 
         <div className="department_chart">

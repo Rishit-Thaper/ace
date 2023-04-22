@@ -7,19 +7,21 @@ import Query from '../Components/Query';
 import {MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight} from 'react-icons/md'
 import bt from '../images/BT.jpg';
 import campus from '../images/campus.jpg';
-import me from '../images/ME.jpg';
-import ece from '../images/ECE.jpg';
+import me from '../images/ME1.jpg';
+import ece from '../images/ECE1.jpg';
 import srsmt from '../images/srsmt.webp'
 import {GiArchiveResearch, GiBrain} from "react-icons/gi"
 import {ImBooks} from "react-icons/im"
 import Carousel from '../Components/Caraousel';
 import photo from '../images/cover01.jpg';
 import '../assessts/admission.css';
+import Scroll from '../Components/Scroll';
 function Admissions() {
   const buttonStyle = {
     width: "30px",
     background: 'none',
     border: '0px',
+    color:'white',
     fontSize:"2rem"
 };
 
@@ -31,6 +33,7 @@ const properties = {
   return (
     <>
     <section className='parent'>
+      <Scroll/>
       <div className="child">
       <div className="slide-container">
         <Fade duration={2000} {...properties}>
@@ -115,17 +118,17 @@ const properties = {
           </div>
           <div className="reason each-fade">
               <i><TbBulb/></i>
-              <h3>Hands-on Experiential Learning</h3><hr />
-              <p>Emphasises practical experience, putting theory into practise, and building students' competency for future employment.</p>
+              <h3>Experiential Learning through Hands-on Practice</h3><hr />
+              <p>Our approach to education places practical experience as a top priority, empowering students to apply theory and build competencies to succeed in future employment opportunities.</p>
           </div>
           <div className="reason each-fade">
               <i><FaHandshake/></i>
               <h3>Industry Tie-ups for Practical Learning</h3><hr />
-              <p>Industry tie-ups provide practical learning, exposing students to real-world scenarios and best practices, equipping them for successful careers.</p>
+              <p>Our industry-partnerships provide practical learning opportunities that expose students to real-world scenarios and best practices, effectively preparing them for successful careers.</p>
           </div>
       <div className="reason each-fade">
               <i><GiArchiveResearch/></i>
-              <h3>Research-oriented innovation.</h3><hr />
+              <h3>Innovation with a Research Focus</h3><hr />
               <p>By supplying students with the most up-to-date skills and knowledge and promoting critical thinking and problem-solving, students are prepared for success.</p>
               
           </div>

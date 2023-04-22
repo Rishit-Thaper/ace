@@ -234,7 +234,7 @@ select:focus{
     .slide-container{
         display: block;
         border-top: 5px solid #24a1e5;
-        width: 100%;
+        width: 99.4%;
         margin-top: 0.05rem;
         z-index: 0;
     }

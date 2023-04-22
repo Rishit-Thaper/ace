@@ -3,6 +3,7 @@ import Carousel from 'react-multi-carousel';
 import '../assessts/carousel.css';
 import 'react-multi-carousel/lib/styles.css';
 import user from '../images/userImg.jpg'
+import Scroll from './Scroll';
 export default function Caraousel() {
     const responsive = {
         superLargeDesktop: {
@@ -24,7 +25,7 @@ export default function Caraousel() {
       };
       return(
         <section className='testimonials'>
-
+          <Scroll/>
           <div className="head">
             <span id='head'>OUR TESTIMONIALS</span>
           </div>

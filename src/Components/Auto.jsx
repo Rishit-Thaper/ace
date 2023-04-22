@@ -1,8 +1,11 @@
-import React from 'react'
+import {React} from 'react'
 import '../assessts/courses.css';
-
+import Scroll from './Scroll';
 export default function Auto() {
+
   return (
-    <div>Auto</div>
+    <div>Auto
+    <Scroll/>
+    </div>
   )
 }

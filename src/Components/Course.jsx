@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import {SiOpenai} from "react-icons/si";
 import {BsRobot} from "react-icons/bs";
+import Scroll from './Scroll';
 import { FcBiotech,FcElectronics,FcCommandLine,FcAutomatic } from "react-icons/fc";
 function Course() {
   return (
@@ -17,6 +18,7 @@ function Course() {
           }}
         />
       </span> your future</h1>
+      <Scroll/>
       <div className="new-course">
         <h1>Launch your Business Career with Our New BBA Course</h1>
         <p>Our new BBA course is designed to provide students with the knowledge and skills they need to succeed in today's competitive business world. With a focus on practical learning and real-world experience, this program will equip you with the tools you need to launch a successful business career.</p>

@@ -1,7 +1,7 @@
 import {React,useEffect,useState} from 'react'
 import '../assessts/home.css';
 import Course from '../Components/Course';
-
+import Scroll from '../Components/Scroll';
 import { Link } from 'react-router-dom';
 import Footer from '../Components/Footer';
 import Carousel from '../Components/Caraousel';
@@ -28,6 +28,7 @@ export default function Home() {
         <div className="overlay">
           <h1>We are engaged to give you a<br/>
           <span>GOOD FUTURE</span></h1>
+          <Scroll/>
           <h2>where Education is a passion, not a business</h2>
           <Link to='/'><button className='exp'>Explore</button></Link>
           <Link to='/'><button className='contact'>Contact Us</button></Link>
