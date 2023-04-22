@@ -2,12 +2,13 @@ import React from 'react';
 import '../assessts/courses.css';
 import me from '../images/ME.jpg';
 import meLab from '../images/ME_LAB1.jpg'
+import Scroll from './Scroll'
 export default function Me() {
   return (
     <div className='about_dep'>
       <h1>Department of Mechanical Engineering</h1>
       <div className="dep_info">
-        
+        <Scroll/>
       <ul> 
         <li>The Department of Mechanical Engineering at Ambala College of Engineering and Applied Research was established in 2004.</li> 
         <li>The department is highly reputed for offering top-quality teaching and research opportunities.</li> 
