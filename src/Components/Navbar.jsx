@@ -199,13 +199,14 @@ export default function Navbar() {
               <button onClick={handleDropdown3} className='dropbtn'>Academics<span><i class="fa-solid fa-caret-down"></i></span></button>
               {showDropdown3 || hoverDropdown3 ? (<div className="dropdown-content1" onMouseEnter={handleMouseEnterDropdown3} onMouseLeave={handleMouseLeaveDropdown3}>
                   <Link onClick={handleLinkClick} to = "/departments">Departments</Link>
-                  <Link onClick={handleLinkClick} to = "/our-collaborations">NPTEL</Link>
-                  <Link onClick={handleLinkClick} to = "/programs">ACE Skill Development Program</Link>
-                  <Link onClick={handleLinkClick} to = "/EPIC">Entrepreneurship Promotion and Incubation Council</Link>
-                  <Link onClick={handleLinkClick} to = "/">Academic Calendar</Link>
-                  <Link onClick={handleLinkClick} to = "/">Date Sheet</Link>
-                  <Link onClick={handleLinkClick} to = "/departments">Subject Specialisation</Link>
-                  <Link onClick={handleLinkClick} to = "/">Exam Guidelines</Link>
+                  <Link onClick={handleLinkClick} to = "/nptel">NPTEL</Link>
+                  <Link onClick={handleLinkClick} to = "/iic">Institution Innovation Council</Link>
+                  <Link onClick={handleLinkClick} to = "/ace-sdp">ACE Skill Development Program</Link>
+                  <Link onClick={handleLinkClick} to = "https://www.epicambala.com/">Entrepreneurship Promotion and Incubation Council</Link>
+                  <Link onClick={handleLinkClick} to = "https://www.ambalacollege.com/wp-content/uploads/2021/11/academic-calander-1.pdf">Academic Calendar</Link>
+                  <Link onClick={handleLinkClick} to = "">Date Sheet</Link>
+                  <Link onClick={handleLinkClick} to = "https://www.ambalacollege.com/wp-content/uploads/2021/06/Website_Emerging_Area_Document1.pdf">Subject Specialisation</Link>
+                  <Link onClick={handleLinkClick} to = "https://www.ambalacollege.com/wp-content/uploads/2021/03/Examination-Guidelines.pdf">Exam Guidelines</Link>
                 </div>):null}
 
             </div>

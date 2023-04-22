@@ -16,7 +16,9 @@ import Carousel from '../Components/Caraousel';
 import photo from '../images/cover01.jpg';
 import '../assessts/admission.css';
 import Scroll from '../Components/Scroll';
+
 function Admissions() {
+
   const buttonStyle = {
     width: "30px",
     background: 'none',
@@ -83,25 +85,25 @@ const properties = {
           </div>
           <div className="reason">
               <i><FaHandshake/></i>
-              <h3>Industry Tie-ups for Practical Learning</h3><hr />
+              <h3>Collaborations with Industries for Practical Learning</h3><hr />
               <p>Industry tie-ups provide practical learning, exposing students to real-world scenarios and best practices, equipping them for successful careers.</p>
           </div>
         </div>
         <div className="reason-div">
           <div className="reason">
               <i><GiArchiveResearch/></i>
-              <h3>Research-oriented innovation.</h3><hr />
-              <p>Students are prepared for success by providing the latest skills and knowledge and encouraging critical thinking and problem-solving.</p>
+              <h3>Research-driven innovation for a better world</h3><hr />
+              <p>Our approach to education emphasizes the latest skills and knowledge, fosters critical thinking and problem-solving, and prepares students for success.</p>
               
           </div>
           <div className="reason">
               <i><ImBooks/></i>
-              <h3>Renowned for Top-notch Education</h3><hr />
-              <p>We provide excellent education through experienced faculty, advanced resources, and a dedication to excellence, equipping students for success in their chosen fields.</p>
+              <h3>Recognized for Exceptional Quality of Education</h3><hr />
+              <p>At our institution, experienced faculty, advanced resources, and a commitment to excellence provide students with the necessary tools for success in their chosen fields of study.</p>
           </div>
           <div className="reason">
               <i><GiBrain/></i>
-              <h3>Focused on Holistic Development</h3><hr />
+              <h3>Unleashing Potential with Holistic Development</h3><hr />
               <p>We prioritize holistic student development, fostering growth through classroom and extracurricular activities, preparing students for success in all areas.</p>
           </div>
         </div>

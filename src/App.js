@@ -4,12 +4,13 @@ import Me from './Components/Me';
 import Cse from './Components/Cse';
 import Ece from './Components/Ece';
 import Applied from './Components/Applied';
+import Iic from './Pages/Iic'
 import Bt from './Components/Bt';
 import Aiml from './Components/Aiml';
 import Auto from './Components/Auto';
 import Home from './Pages/Home';
 import About from './Pages/About';
-import Academics from './Pages/Academics';
+import Nptel from './Pages/Nptel';
 import Admissions from './Pages/Admissions';
 import Departments from './Pages/Departments';
 import Contact from './Pages/Contact';
@@ -26,7 +27,7 @@ function App() {
         <Route path='/query' element={<Query/>}/>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
-        <Route path='/acadmics' element={<Academics/>}/>
+        <Route path='/nptel' element={<Nptel/>}/>
         <Route path='/departments' element={<Departments/>}/>
         <Route path='/admissions' element={<Admissions/>}/>
         <Route path='/departments/cse' element={<Cse/>}/>
@@ -37,8 +38,8 @@ function App() {
         <Route path='/departments/auto-robo' element={<Auto/>}/>
         <Route path='/departments/apd' element={<Applied/>}/>
         <Route path='/contact' element={<Contact/>}/>
-        <Route path='/careers' element={<Academics/>}/>
-        <Route path='/blog' element={<Academics/>}/>
+         <Route path='/iic' element={<Iic/>}/>
+        {/*<Route path='/blog' element={<Academics/>}/>
         <Route path='/programs' element={<Academics/>}/>
         <Route path='/photo-gallery' element={<Academics/>}/>
         <Route path='/societies' element={<Academics/>}/>
@@ -52,7 +53,7 @@ function App() {
         <Route path='/alumni-meets' element={<Academics/>}/>
         <Route path='/rules-regulations' element={<Academics/>}/>
         <Route path='/terms-and-conditions' element={<Academics/>}/>
-        <Route path='/student-grievance-redressal-form' element={<Academics/>}/>
+        <Route path='/student-grievance-redressal-form' element={<Academics/>}/> */}
       </Routes>
       <Footer/>
     </BrowserRouter>
