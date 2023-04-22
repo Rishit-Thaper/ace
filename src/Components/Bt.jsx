@@ -35,7 +35,7 @@ export default function Bt() {
             <li>Fermentation and DSP Lab</li>
             <li>Bioinformatics Lab</li>
             <li>Advanced Molecular Lab</li>
-            <li></li>
+            <li>Project Lab and Applied Biotech Research Center</li>
           </ul>
         </div>
       </div>
