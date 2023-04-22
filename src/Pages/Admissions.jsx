@@ -8,7 +8,7 @@ import {MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight} from 'react-ico
 import bt from '../images/BT.jpg';
 import campus from '../images/campus.jpg';
 import me from '../images/ME.jpg';
-import ece from '../images/ece.jpg';
+import ece from '../images/ECE.jpg';
 import srsmt from '../images/srsmt.webp'
 import {GiArchiveResearch, GiBrain} from "react-icons/gi"
 import {ImBooks} from "react-icons/im"

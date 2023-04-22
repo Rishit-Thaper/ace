@@ -1,0 +1,61 @@
+.about_dep{
+    padding: 2rem;
+    font-family: Poppins;
+    background-color: whitesmoke;
+}
+.about_dep h1{
+    font-size: 3rem;
+    color: #275080;
+}
+.dep_info{
+    display: flex;
+    justify-content: center;
+}
+.dep_info img{
+    width: 35%;
+    padding: 2rem;
+    border-radius: 50px;
+}
+.dep_info ul{
+    padding: 2rem;
+}
+.dep_info li{
+    font-size: 1.1rem;
+    line-height: 35px;
+}
+.lab_info h2{
+    font-size: 2rem;
+    color: #275080;
+}
+.lab_info{
+    display: flex;
+    align-items: center;
+}
+.lab_info ul{
+    padding: 2rem 2rem 0rem 2rem;
+}
+.lab_info li{
+    line-height: 35px;
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 480px){
+    .about_dep{
+    border-top: 5px solid #24a1e5;
+
+    }
+    .dep_info{
+        flex-direction: column-reverse;
+    }
+    .dep_info img{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 25px;
+    }
+    .dep_info ul{
+        padding: 0.5rem;
+    }
+    .about_dep h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
