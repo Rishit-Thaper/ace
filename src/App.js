@@ -19,6 +19,12 @@ import Contact from './Pages/Contact';
 import Footer from './Components/Footer';
 import {BrowserRouter,Route,Routes}from "react-router-dom";
 import Query from './Components/Query';
+import Eru from './Components/Eru';
+import Csi from './Components/Csi';
+import Bio from './Components/Bio';
+import Iete from './Components/Iete';
+import Dc from './Components/Dc';
+
 function App() {
 
   return (
@@ -43,6 +49,12 @@ function App() {
          <Route path='/iic' element={<Iic/>}/>
         <Route path='/ace-sdp' element={<Sdp/>}/>
         <Route path='/societies' element={<Society/>}/>
+        <Route path='/societies/erudition' element={<Eru/>}/>
+        <Route path='/societies/csi' element={<Csi/>}/>
+        <Route path='/societies/biochepron' element={<Bio/>}/>
+        <Route path='/societies/design-club' element={<Dc/>}/>
+        <Route path='/societies/iete-forum' element={<Iete/>}/>
+        
         {/*<Route path='/programs' element={<Academics/>}/>
         <Route path='/photo-gallery' element={<Academics/>}/>
         <Route path='/events' element={<Academics/>}/>
