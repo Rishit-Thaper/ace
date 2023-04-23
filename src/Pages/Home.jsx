@@ -3,7 +3,6 @@ import '../assessts/home.css';
 import Course from '../Components/Course';
 import Scroll from '../Components/Scroll';
 import { Link } from 'react-router-dom';
-import Footer from '../Components/Footer';
 import Carousel from '../Components/Caraousel';
 
 export default function Home() {

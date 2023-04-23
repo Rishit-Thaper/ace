@@ -1,7 +1,9 @@
 .about_dep{
     padding: 2rem;
     font-family: Poppins;
-    background-color: whitesmoke;
+    background-image: url('../images/banner01.png');
+    background-size: cover;
+    background-position: center;
 }
 .about_dep h1{
     font-size: 3rem;
@@ -36,40 +38,118 @@
     display: flex;
     align-items: center;
 }
-.lab_info ul, .lab_info1 ul{
+.lab_info ul, .lab_info1 ul, .aboutNptel ul{
     padding: 2rem 2rem 0rem 2rem;
 }
-.lab_info li, .lab_info1 li{
+.lab_info li, .lab_info1 li, .aboutNptel li{
     line-height: 35px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    list-style: circle;
 }
 .lab_info img{
     width: 35%;
     border-radius: 50px;
     padding: 2rem;
 }
+.aboutNptel{
+    display: flex;
+    justify-content: center;
+}
+.div1{
+    background-image: url('../images/banner05.png');
+    background-size: cover;
+    background-position: center;
+}
+.aboutNptel li{
+    font-size: 1.1rem;
+}
+.aboutNptel img{
+    width: 25%;
+    padding: 2rem;
+}
+.contactNptel{
+    padding: 2rem;
+}
+.mission-vision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.vision, .mission{
+    margin: 1rem;
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    background-image: url('../images/banner06.png');
+}
+.vision h4, .mission h4{
+    font-size: 2rem;
+}
+.vision ol, .mission ol{
+    padding: 1rem 0 0 0;
+}
+.vision li, .mission li{
+    font-size: 0.9rem;
+    line-height: 32px;
+}   
+.nptel{
+    font-family: Poppins;
+    padding: 2rem;
+    background-color: whitesmoke;
+}
+.nptel h1{
+    font-size: 3rem;
+    padding: 0 0 1rem 0;
+    color: #275080;
+}
+.contactNptel button{
+    padding: 0.8rem;
+    background-color: #275080;
+    color: whitesmoke;
+    font-family: Poppins;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.contactNptel button:hover{
+    text-decoration: underline;
+}
 @media screen and (max-width: 480px){
     .about_dep{
     border-top: 5px solid #24a1e5;
-
+    
     }
-    .dep_info{
+    .dep_info, .aboutNptel{
         flex-direction: column-reverse;
+        padding: 0;
     }
-    .dep_info img, .lab_info img{
+    .dep_info img, .lab_info img, .aboutNptel img{
         width: 100%;
         padding: 0.5rem;
         border-radius: 25px;
     }
-    .dep_info ul, .lab_info ul{
+    .dep_info ul, .lab_info ul, .aboutNptel ul{
         padding: 0.5rem;
     }
-    .about_dep h1{
+    .about_dep h1, .nptel h1{
         font-size: 2rem;
         text-align: center;
     }
     .lab_info{
         flex-direction: column;
         padding: 0;
+    }
+    .aboutNptel li{
+        font-size: 1rem;
+        line-height: 32px;
+    }
+    .mission-vision{
+        flex-direction: column;
+        padding: 0;
+    }
+    .nptel{
+        padding: 1rem;
+        border-top: 5px solid #24a1e5;
     }
 }

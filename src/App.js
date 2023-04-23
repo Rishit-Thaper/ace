@@ -9,6 +9,7 @@ import Bt from './Components/Bt';
 import Aiml from './Components/Aiml';
 import Auto from './Components/Auto';
 import Home from './Pages/Home';
+import Sdp from './Pages/Sdp'
 import About from './Pages/About';
 import Nptel from './Pages/Nptel';
 import Admissions from './Pages/Admissions';
@@ -39,8 +40,8 @@ function App() {
         <Route path='/departments/apd' element={<Applied/>}/>
         <Route path='/contact' element={<Contact/>}/>
          <Route path='/iic' element={<Iic/>}/>
-        {/*<Route path='/blog' element={<Academics/>}/>
-        <Route path='/programs' element={<Academics/>}/>
+        <Route path='/ace-sdp' element={<Sdp/>}/>
+        {/*<Route path='/programs' element={<Academics/>}/>
         <Route path='/photo-gallery' element={<Academics/>}/>
         <Route path='/societies' element={<Academics/>}/>
         <Route path='/events' element={<Academics/>}/>
