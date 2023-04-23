@@ -65,7 +65,8 @@
 }
 .aboutNptel img{
     width: 25%;
-    padding: 2rem;
+    padding: 1rem;
+    border-radius: 50px;
 }
 .contactNptel{
     padding: 2rem;
