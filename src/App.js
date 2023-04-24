@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar';
 import Me from './Components/Me';
 import Cse from './Components/Cse';
 import Ece from './Components/Ece';
+import Events from './Pages/Events';
 import Applied from './Components/Applied';
 import Iic from './Pages/Iic'
 import Bt from './Components/Bt';
@@ -54,7 +55,7 @@ function App() {
         <Route path='/societies/biochepron' element={<Bio/>}/>
         <Route path='/societies/design-club' element={<Dc/>}/>
         <Route path='/societies/iete-forum' element={<Iete/>}/>
-        
+        <Route path='/events' element={<Events/>}/>
         {/*<Route path='/programs' element={<Academics/>}/>
         <Route path='/photo-gallery' element={<Academics/>}/>
         <Route path='/events' element={<Academics/>}/>

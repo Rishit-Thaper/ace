@@ -1,31 +1,85 @@
-.society{
+.mainSociety{
     background-color: whitesmoke;
     font-family: Poppins;
+
 }
 .aboutSociety{
     padding: 2rem;
-    display: flex;
-    justify-content: center;
     font-family: Poppins;
+    background-image: url('../images/banner01.png');
+    background-size: cover;
+    background-position: center;
 }
-.society h1{
+.aboutSociety h2{
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #275080;
+}
+.aboutSociety h1{
     font-size: 3rem;
     color: #275080;
     padding: 1rem;
 }
-.society h2{
-    padding: 0 0 1rem 1rem;
-    font-size: 1.5rem;
-    color: #275080;
+.society{
+    display: flex;
+    justify-content: center;
+}
+.aboutSociety img{
+    width: 35%;
+    padding: 2rem;
+    border-radius: 50px;
 }
 .aboutSociety ul{
-    padding: 0 0 0 2rem;
+    padding: 2rem;
 }
 .aboutSociety li{
     font-size: 1.1rem;
+    line-height: 35px;
 }
-.societyHead img{
-    width: 30%;
-    padding: 2rem;
+.event_info h2,.event_info h2{
+    font-size: 2rem;
+    color: #275080;
+}
+.event_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.event_info{
+    display: flex;
+    align-items: center;
+}
+.event_info ul{
+    padding: 2rem 2rem 0rem 2rem;
+}
+.event_info li{
+    line-height: 35px;
+    font-size: 1.1rem;
+    list-style: circle;
+}
+.event_info img{
+    width: 35%;
     border-radius: 50px;
+    padding: 2rem;
+}
+@media screen and (max-width: 480px){
+    .mainSociety{
+    border-top: 5px solid #24a1e5;
+    }
+    .society{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .society img, .event_info img{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 25px;
+    }
+    .aboutSociety ul, .event_info ul{
+        padding: 0.5rem;
+    }
+    .event_info{
+        flex-direction: column;
+        padding: 1rem;
+    }
 }

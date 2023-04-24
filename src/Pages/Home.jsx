@@ -35,7 +35,6 @@ export default function Home() {
     </div>
     <Course/>
     <section className='aboutSection'>
-
 <div className="about">
   <span>About ACE</span>
   <div className="buttons">
@@ -49,6 +48,7 @@ export default function Home() {
   <Link to='/about'><button className='know'>Know More</button></Link>
 </div>
 </section>
+
 <section>
   <Carousel/>
   <div className="query-1">
