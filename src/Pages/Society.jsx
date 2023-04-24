@@ -64,7 +64,7 @@ function Society() {
             <div className="dep_about">
               <h1>Biochepron Society</h1>
               <p>The Biochepron Society is a student-led organization in the Biotech Engineering Department that promotes biotechnology through workshops, events, and research projects. It offers a platform for students to showcase their work, fosters innovation, and provides networking opportunities for internships and job placements</p>
-              <Link to="/societies/bio">Explore More</Link>
+              <Link to="/societies/biochepron">Explore More</Link>
             </div>
           </div>
         </div>

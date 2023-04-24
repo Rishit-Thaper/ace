@@ -1,0 +1,31 @@
+.society{
+    background-color: whitesmoke;
+    font-family: Poppins;
+}
+.aboutSociety{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+}
+.society h1{
+    font-size: 3rem;
+    color: #275080;
+    padding: 1rem;
+}
+.society h2{
+    padding: 0 0 1rem 1rem;
+    font-size: 1.5rem;
+    color: #275080;
+}
+.aboutSociety ul{
+    padding: 0 0 0 2rem;
+}
+.aboutSociety li{
+    font-size: 1.1rem;
+}
+.societyHead img{
+    width: 30%;
+    padding: 2rem;
+    border-radius: 50px;
+}
