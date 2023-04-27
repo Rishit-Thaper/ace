@@ -1,5 +1,4 @@
 import {React, useEffect} from 'react'
-
 import '../assessts/societies.css';
 import bt from '../images/BT1.jpg'
 import btLab from '../images/BT_LAB.png';
@@ -21,24 +20,7 @@ export default function Bio() {
          <li>The society also organizes events and competitions to encourage innovation and creative thinking among its members.</li>
          <li>Additionally, the Biochepron Society collaborates with industry experts and academic professionals to offer opportunities for internships, research projects, and job placements in the biotechnology field.</li>
       </ul>
-      
         <img src={bt} alt="" />
-        </div>
-      </div>
-      <div className="event_info">
-        <img src={btLab} alt="" />
-        <div className="event_list">
-          <h2>Events Organised</h2>
-          <ul>
-            <li>Declamation Competition</li>
-            <li>Know your </li>
-            <li>Diagnostics and Immunology Lab</li>
-            <li>Cell and Tissue culture Lab</li>
-            <li>Fermentation and DSP Lab</li>
-            <li>Bioinformatics Lab</li>
-            <li>Advanced Molecular Lab</li>
-            <li>Project Lab and Applied Biotech Research Center</li>
-          </ul>
         </div>
       </div>
     </div>
