@@ -150,7 +150,7 @@ export default function Navbar() {
       <div className="nav">
         <div className="logo">
             
-            <img src={ACE} alt="logo"/>
+        <Link to='/'><img src={ACE} alt="logo"/></Link>
 
             <div className="apply">
               <Link><button><i class="fa-regular fa-hand-pointer"></i> Apply Now</button></Link>
@@ -212,16 +212,14 @@ export default function Navbar() {
             </div>
             <div className="dropdown1"onMouseEnter={handleMouseEnterDropdown4} onMouseLeave={handleMouseLeaveDropdown4}>
 
-              <button onClick={handleDropdown4} className='dropbtn'>Beyond ACADemICS<span><i class="fa-solid fa-caret-down"></i></span></button>
+              <button onClick={handleDropdown4} className='dropbtn'>Life @ ACE<span><i class="fa-solid fa-caret-down"></i></span></button>
               {showDropdown4 || hoverDropdown4 ? (<div className="dropdown-content1" onMouseEnter={handleMouseEnterDropdown4} onMouseLeave={handleMouseLeaveDropdown4}>
                   <Link onClick={handleLinkClick} to = "/societies">Our Societies</Link>
                   <Link onClick={handleLinkClick} to = "/events">Co-curricular Activities</Link>
                   <Link onClick={handleLinkClick} to = "/sports">Sports Activities</Link>
                   <Link onClick={handleLinkClick} to = "/photo-gallery">Photo Gallery</Link>
                   <Link onClick={handleLinkClick} to = "/alumni-meets">Alumni Meets</Link>
-                  <Link onClick={handleLinkClick} to = "/conovocations">Convocation</Link>
                   <Link onClick={handleLinkClick} to = "/programs">Faculty & Student Development Program</Link>
-                  <Link onClick={handleLinkClick} to = "/ace-in-news">ACE in News</Link>
 
                 </div>):null}
             </div>
@@ -236,7 +234,6 @@ export default function Navbar() {
                   <Link onClick={handleLinkClick} to = "/our-collaborations">Industrial Collaborations</Link>
                   <Link onClick={handleLinkClick} to = "/ace-in-news">PLacements News at a Glance</Link>
                 </div>):null}
-
             </div>
         </div>
       </div>

@@ -1,5 +1,131 @@
 .events{
     background-color: whitesmoke;
     font-family: Poppins;
+}
+.eventHead{
+    background-size: cover;
+    position: relative;
+}
+.headOverlay{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+}
+.fade-each img{
+    filter: brightness(30%);
+    width: 100%;
+}
+.headOverlay h1{
+    font-size: 4rem;
+    color: whitesmoke;
+}
+.headOverlay h3{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: white;
+}
+/* .eventFlex{
     padding: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+} */
+.eventFlex,.eventFlex1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem;
+  }
+.eventFlex1{
+    padding-bottom: 4rem;
+}
+  .eventCard {
+    width: calc(50% - 20px);
+    border-radius: 15px;
+    padding: 1.5rem 1.5rem 1.5rem 1rem;
+    text-align: justify;
+    display: flex;
+    background-image: url('../images/cardBG.png');
+    background-size: cover;
+}
+.eventCard img{
+    width: 35%;
+    padding: .5rem;
+    border-radius: 15px;
+}
+.eventCard h2{
+    border-bottom: 2px solid white;
+    color: white;
+    margin-left: 1rem;
+
+}
+.eventCard p{
+    color: whitesmoke;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+.cultureHead, .techHead{
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    color: #275080;
+}
+@media screen and (max-width:480px) {
+    .events{
+        border-top: 5px solid #24a1e5;
+    }
+    .headOverlay{
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%,-50%);
+    }
+    .fade-each img{
+        filter: brightness(50%);
+        width: 100%;
+    }
+    .headOverlay h1{
+        font-size: 1.5rem;
+        color: white;
+    }
+    .headOverlay h3{
+        font-size: 0.6rem;
+        padding: 0.5rem;
+        color: white;
+    }
+
+    .eventCard img{
+        width: 100%;
+    }
+    .eventFlex{
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .eventCard{
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+        margin: 0rem 0 1rem 0;
+    }
+    .eventCard h2{
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem  0 0 0;
+        margin-left: 0;
+        color: white;
+        border: none;
+    }
+    .eventCard p{
+        font-size: 0.8rem;
+    }
+    .cultureHead, .techHead{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
 }
