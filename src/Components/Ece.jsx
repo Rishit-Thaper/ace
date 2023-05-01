@@ -1,5 +1,5 @@
 import {React, useEffect} from 'react'
-import ece from '../images/ECE.jpg'
+import ece from '../images/ece.jpg'
 import eceLab from '../images/ECE_LAB.jpg'
 import '../assessts/courses.css';
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Scroll from '../Components/Scroll'
 import '../assessts/courses.css'
 import sdp from '../images/sdp.png'
