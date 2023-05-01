@@ -1,5 +1,8 @@
 .events{
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    background-image: url('../images/flexBG.png');
+    background-size: cover;
+    background-position: center;
     font-family: Poppins;
 }
 .eventHead{
