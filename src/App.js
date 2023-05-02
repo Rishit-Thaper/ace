@@ -21,6 +21,7 @@ import Footer from './Components/Footer';
 import {BrowserRouter,Route,Routes}from "react-router-dom";
 import Query from './Components/Query';
 import Eru from './Components/Eru';
+import Sports from './Pages/Sports';
 import Csi from './Components/Csi';
 import Bio from './Components/Bio';
 import Iete from './Components/Iete';
@@ -56,10 +57,11 @@ function App() {
         <Route path='/societies/design-club' element={<Dc/>}/>
         <Route path='/societies/iete-forum' element={<Iete/>}/>
         <Route path='/events' element={<Events/>}/>
+        <Route path='/sports' element={<Sports/>}/>
         {/*<Route path='/programs' element={<Academics/>}/>
         <Route path='/photo-gallery' element={<Academics/>}/>
         <Route path='/events' element={<Academics/>}/>
-        <Route path='/sports' element={<Academics/>}/>
+
         <Route path='/ace-in-news' element={<Academics/>}/>
         <Route path='/conovocations' element={<Academics/>}/>
         <Route path='/placements' element={<Academics/>}/>

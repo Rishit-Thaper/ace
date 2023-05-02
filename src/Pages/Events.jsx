@@ -91,7 +91,6 @@ The Alumni Meets at ACE foster a vibrant alumni community by providing a platfor
           </div>
         </div>
         </div>
-
       </div>
   )
 }
