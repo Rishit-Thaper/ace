@@ -1,0 +1,12 @@
+.placementHeader{
+    background-image: url('../images/place1.png');
+    background-size: cover;
+    font-family: Poppins;
+    /* background-position: center; */
+    padding: 2rem;
+    min-height: 70vh;
+}
+.placementHeader h1{
+    font-size: 3rem;
+    
+}

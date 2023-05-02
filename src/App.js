@@ -24,6 +24,7 @@ import Eru from './Components/Eru';
 import Sports from './Pages/Sports';
 import Csi from './Components/Csi';
 import Bio from './Components/Bio';
+import Placements from './Pages/Placements';
 import Iete from './Components/Iete';
 import Dc from './Components/Dc';
 
@@ -48,7 +49,7 @@ function App() {
         <Route path='/departments/auto-robo' element={<Auto/>}/>
         <Route path='/departments/apd' element={<Applied/>}/>
         <Route path='/contact' element={<Contact/>}/>
-         <Route path='/iic' element={<Iic/>}/>
+        <Route path='/iic' element={<Iic/>}/>
         <Route path='/ace-sdp' element={<Sdp/>}/>
         <Route path='/societies' element={<Society/>}/>
         <Route path='/societies/erudition' element={<Eru/>}/>
@@ -58,16 +59,12 @@ function App() {
         <Route path='/societies/iete-forum' element={<Iete/>}/>
         <Route path='/events' element={<Events/>}/>
         <Route path='/sports' element={<Sports/>}/>
-        {/*<Route path='/programs' element={<Academics/>}/>
-        <Route path='/photo-gallery' element={<Academics/>}/>
-        <Route path='/events' element={<Academics/>}/>
+        <Route path='/placements' element={<Placements/>}/>
+
+        {/*<Route path='/photo-gallery' element={<Academics/>}/>
 
         <Route path='/ace-in-news' element={<Academics/>}/>
-        <Route path='/conovocations' element={<Academics/>}/>
-        <Route path='/placements' element={<Academics/>}/>
-        <Route path='/management' element={<Academics/>}/>
         <Route path='/our-collaborations' element={<Academics/>}/>
-        <Route path='/alumni-meets' element={<Academics/>}/>
         <Route path='/rules-regulations' element={<Academics/>}/>
         <Route path='/terms-and-conditions' element={<Academics/>}/>
         <Route path='/student-grievance-redressal-form' element={<Academics/>}/> */}
