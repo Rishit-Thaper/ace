@@ -170,7 +170,7 @@ export default function Navbar() {
               {showDropdown1 || hoverDropdown1 ? (<div className="dropdown-content1" onMouseEnter={handleMouseEnterDropdown1} onMouseLeave={handleMouseLeaveDropdown1}>
                   <Link onClick={handleLinkClick} to = "/about">Mission and Vision</Link>
                   <Link onClick={handleLinkClick} to = "/management">Management</Link>
-                  <Link onClick={handleLinkClick} to = "/about">Our Facilities</Link>
+                  <Link onClick={handleLinkClick} to = "/facilities">Our Facilities</Link>
                   <Link onClick={handleLinkClick} to = "/about">Approval & Affliation</Link>
                   <Link onClick={handleLinkClick} to="/about">Awards & Ranking</Link>
                   <Link onClick={handleLinkClick} to="/about">Social Responsibility </Link>

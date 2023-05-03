@@ -1,0 +1,57 @@
+*{
+    box-sizing:border-box;
+    font-family: 'Poppins';
+}
+/* Styling the quote heading on facilities page */
+.quoteFacility{
+    color:#24a1e5;
+    font-weight:bolder;
+    font-size: 35px;
+    padding:2%;
+}
+
+.facilities{
+ 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:20px;
+    padding:3%;
+}
+.container{
+    width:100%;
+    max-width: 1500px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+.first, .third{
+    width:50%;
+    height:500px;
+    background-color:#24a1e5;
+    /* display: flex;
+    align-items:center;
+    justify-content:center;
+    padding:30px;
+    border-radius:2%; */
+}
+.second, .forth{
+    width:50%;
+    height:500px;
+    background-color:whitesmoke;
+    /* display: flex;
+    align-items:center;
+    justify-content:center;
+    padding:30px; */
+
+}
+
+#BusImg{
+    height:300px;
+    width:100%;
+}
+#reference{
+    height:300px;
+    width:100%;
+}
