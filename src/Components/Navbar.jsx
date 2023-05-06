@@ -218,9 +218,7 @@ export default function Navbar() {
                   <Link onClick={handleLinkClick} to = "/events">Co-curricular Activities</Link>
                   <Link onClick={handleLinkClick} to = "/sports">Sports Activities</Link>
                   <Link onClick={handleLinkClick} to = "/photo-gallery">Photo Gallery</Link>
-                  <Link onClick={handleLinkClick} to = "/alumni-meets">Alumni Meets</Link>
                   <Link onClick={handleLinkClick} to = "/programs">Faculty & Student Development Program</Link>
-
                 </div>):null}
             </div>
 
@@ -229,8 +227,6 @@ export default function Navbar() {
               <button onClick={handleDropdown5} className='dropbtn'>Placements<span><i class="fa-solid fa-caret-down"></i></span></button>
               {showDropdown5 || hoverDropdown5 ? (<div className="dropdown-content1" onMouseEnter={handleMouseEnterDropdown5} onMouseLeave={handleMouseLeaveDropdown5}>
                   <Link onClick={handleLinkClick} to = "/placements">Placements</Link>
-                  <Link onClick={handleLinkClick} to = "/placements">Our Recruiters</Link>
-                  <Link onClick={handleLinkClick} to = "/placements">Training & Placement Officer</Link>
                   <Link onClick={handleLinkClick} to = "/our-collaborations">Industrial Collaborations</Link>
                   <Link onClick={handleLinkClick} to = "/ace-in-news">PLacements News at a Glance</Link>
                 </div>):null}

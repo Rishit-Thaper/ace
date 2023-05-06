@@ -21,8 +21,10 @@ import Footer from './Components/Footer';
 import {BrowserRouter,Route,Routes}from "react-router-dom";
 import Query from './Components/Query';
 import Eru from './Components/Eru';
+import Sports from './Pages/Sports';
 import Csi from './Components/Csi';
 import Bio from './Components/Bio';
+import Placements from './Pages/Placements';
 import Iete from './Components/Iete';
 import Dc from './Components/Dc';
 import Facilities from './Pages/Facilities';
@@ -48,7 +50,7 @@ function App() {
         <Route path='/departments/auto-robo' element={<Auto/>}/>
         <Route path='/departments/apd' element={<Applied/>}/>
         <Route path='/contact' element={<Contact/>}/>
-         <Route path='/iic' element={<Iic/>}/>
+        <Route path='/iic' element={<Iic/>}/>
         <Route path='/ace-sdp' element={<Sdp/>}/>
         <Route path='/societies' element={<Society/>}/>
         <Route path='/societies/erudition' element={<Eru/>}/>
@@ -57,17 +59,21 @@ function App() {
         <Route path='/societies/design-club' element={<Dc/>}/>
         <Route path='/societies/iete-forum' element={<Iete/>}/>
         <Route path='/events' element={<Events/>}/>
+<<<<<<< HEAD
         <Route path='/facilities' element={<Facilities />} />
         {/*<Route path='/programs' element={<Academics/>}/>
         <Route path='/photo-gallery' element={<Academics/>}/>
         <Route path='/events' element={<Academics/>}/>
         <Route path='/sports' element={<Academics/>}/>
+=======
+        <Route path='/sports' element={<Sports/>}/>
+        <Route path='/placements' element={<Placements/>}/>
+
+        {/*<Route path='/photo-gallery' element={<Academics/>}/>
+
+>>>>>>> ccb9e18dc1583b092def598d3ec1e70eff687072
         <Route path='/ace-in-news' element={<Academics/>}/>
-        <Route path='/conovocations' element={<Academics/>}/>
-        <Route path='/placements' element={<Academics/>}/>
-        <Route path='/management' element={<Academics/>}/>
         <Route path='/our-collaborations' element={<Academics/>}/>
-        <Route path='/alumni-meets' element={<Academics/>}/>
         <Route path='/rules-regulations' element={<Academics/>}/>
         <Route path='/terms-and-conditions' element={<Academics/>}/>
         <Route path='/student-grievance-redressal-form' element={<Academics/>}/> */}
