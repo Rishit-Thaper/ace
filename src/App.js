@@ -28,6 +28,7 @@ import Placements from './Pages/Placements';
 import Iete from './Components/Iete';
 import Dc from './Components/Dc';
 import Facilities from './Components/Facilities';
+import Management from './Components/Management';
 
 function App() {
 
@@ -60,6 +61,7 @@ function App() {
         <Route path='/societies/iete-forum' element={<Iete/>}/>
         <Route path='/events' element={<Events/>}/>
         <Route path='/facilities' element={<Facilities />} />
+        <Route path='/management' element={<Management />} />
         {/*<Route path='/programs' element={<Academics/>}/>
         <Route path='/photo-gallery' element={<Academics/>}/>
         <Route path='/events' element={<Academics/>}/>

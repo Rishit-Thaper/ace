@@ -8,7 +8,7 @@ export default function Facilities(){
     return(
         <>
         {/* Quote heading for facilities ... */}
-        <p className='quoteFacility'>Our facilities are a tangible representation of our commitment to promoting the growth and success of our students.</p>
+        <p className='quote'>Our facilities are a tangible representation of our commitment to promoting the growth and success of our students.</p>
         <Scroll />
         <section className="facility">
             <div className="container">
@@ -63,4 +63,4 @@ export default function Facilities(){
         </section>
         </>
     )
-}
+};
