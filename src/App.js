@@ -27,6 +27,8 @@ import Bio from './Components/Bio';
 import Placements from './Pages/Placements';
 import Iete from './Components/Iete';
 import Dc from './Components/Dc';
+import Facilities from './Components/Facilities';
+import Management from './Components/Management';
 
 function App() {
 
@@ -58,11 +60,19 @@ function App() {
         <Route path='/societies/design-club' element={<Dc/>}/>
         <Route path='/societies/iete-forum' element={<Iete/>}/>
         <Route path='/events' element={<Events/>}/>
+        <Route path='/facilities' element={<Facilities />} />
+        <Route path='/management' element={<Management />} />
+        {/*<Route path='/programs' element={<Academics/>}/>
+        <Route path='/photo-gallery' element={<Academics/>}/>
+        <Route path='/events' element={<Academics/>}/>
+        <Route path='/sports' element={<Academics/>}/>
+=======
         <Route path='/sports' element={<Sports/>}/>
         <Route path='/placements' element={<Placements/>}/>
 
         {/*<Route path='/photo-gallery' element={<Academics/>}/>
 
+>>>>>>> ccb9e18dc1583b092def598d3ec1e70eff687072
         <Route path='/ace-in-news' element={<Academics/>}/>
         <Route path='/our-collaborations' element={<Academics/>}/>
         <Route path='/rules-regulations' element={<Academics/>}/>
