@@ -27,8 +27,6 @@
     align-items:center;
     justify-content:center;
     margin-bottom:1%;
-    
-    
 }
 .first, .third{
     width:50%;
@@ -219,7 +217,13 @@ article.lastSlide{
     .prev , .next{
         width:2rem;
         height: 2rem;
-        font-size: 1.5rem;
     }
 }
-
+@media screen and (max-width: 480px) {
+    .container{
+        flex-direction: column;
+    }
+    .facility{
+        margin: 0;
+    }
+}

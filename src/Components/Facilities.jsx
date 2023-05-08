@@ -14,7 +14,7 @@ export default function Facilities(){
         <section className="facility">
             <div className="container">
                 <div className="first">
-                    <img id="BusImg" src={bus} />
+                    <img id="BusImg" src={bus} alt='facilities'/>
                 <p id="FaciHeading">Transport</p>
                 <ul className="FaciContent"> 
                     <li> Bus facility for the students & faculty to commute to and from the campus.</li>
@@ -24,7 +24,7 @@ export default function Facilities(){
                 
                 </div>
                 <div className="second">
-                <img id="BusImg" src={bus} />
+                <img id="BusImg" src={bus} alt='facilities' />
                 <p id="FaciHeading">ATM</p>
                 <ul className="FaciContent">
                     <li>ATM facility for the students to access cash on campus.</li>
@@ -35,31 +35,24 @@ export default function Facilities(){
                 
                 </div>
                 <div className="third">
-                <img id="BusImg" src={hostel} />
+                <img id="BusImg" src={hostel} alt='facilities'/>
                 <p id="FaciHeading">Hostel</p>
                 <ul className="FaciContent">
                     <li>Boys hostel with a capacity of 250 & girls hostel with a capacity of 129.</li>
                     <li>Free Wi-fi connectivity for hostelers.</li>
                     <li>On campus faculty quarters along with Director's house & Guest house. </li>
-
-
                 </ul>
-                
                 </div>
+                
                 <div className="forth">
-                <img id="BusImg" src={gym} />
+                <img id="BusImg" src={gym} alt='facilities'/>
                 <p id="FaciHeading">Gymnasium</p>
                 <ul className="FaciContent">
                     <li>Well-equipped gym for boys near boys hostel.</li>
                     <li>Multi-purpose gym.</li>
                     <li>Treadmill & gym cycle, etc. is also available in girls hostel.</li>
-
-
                 </ul>
-
-                
                 </div>
-
             </div>
         </section>
         </section>
