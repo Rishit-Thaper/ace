@@ -1,0 +1,202 @@
+*{
+    font-family: 'Poppins';
+}
+/* Styling the quote heading on facilities page */
+.quote{
+    color:#24a1e5;
+    font-weight:bolder;
+    font-size: 35px;
+    padding:2%;
+}
+/* Styling the card component of facilities */
+.facilities{
+ 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:20px;
+    padding:3%;
+}
+.container{
+    width:100%;
+    max-width: 1500px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:1%;
+    
+    
+}
+.first, .third{
+    width:50%;
+    height:600px;
+    background-color:whitesmoke;
+    margin-left:1%;
+    margin-right:1%;
+    justify-content:center;
+    border-bottom: 4px solid #270580;
+    border-radius:4%;
+    overflow:hidden;
+}
+.second, .forth{
+    width:50%;
+    height:600px;
+    background-color:whitesmoke;
+    border-bottom: 4px solid #270580;
+    border-radius:4%;
+    overflow:hidden;
+    justify-content:center;
+    
+
+}
+
+#BusImg{
+    height:300px;
+    width:100%;
+    object-fit: cover; 
+   
+}
+#FaciHeading{
+    text-align: center;
+    font-weight:bolder;
+    font-size: 3vh;
+    color:#270580;
+}
+.FaciContent{
+    list-style-type: square;
+    margin:30px;
+    font-weight:500;
+}
+
+/* Styling the Management */
+/* h1,h2{
+
+    text-transform: capitalize;
+    line-height: 1.25; 
+    margin-bottom: 0.75rem; 
+} */
+/* h1{
+    color: #124559;
+    font-size:40px;
+} */
+/* h2{
+    font-size: 50px;
+    
+} */
+
+.section{
+    width:90vw;
+    margin: 4rem auto;
+    max-width: 1170px;
+    background-color: whitesmoke;
+    border-radius: 2%;
+    padding: 2%;
+    border-bottom:4px solid #124559;
+    
+    
+    
+    
+}
+@media screen and (min-width: 992px){
+    .section{
+        width: 95vw;
+    }
+}
+.section-center{
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 80vw;
+    height: 450px;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+article{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s linear;
+
+}
+article.activeSlide{
+    opacity:1;
+    transform: translateX(0);
+}
+article.lastSlide{
+    transform: translate(-100%);
+}
+.person-img{
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0,2);
+    /* padding: 2%; */
+}
+
+.title{
+    text-transform: capitalize;
+    margin-bottom: 0.75rem;
+    color: #24a1e5;
+    /* text-shadow: 2px 2px 2px #24a1e5; */
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 30px;
+    font-weight: 800;
+}
+.title h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.text{
+    max-width: 35rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    line-height: 2; 
+    color: black;
+}
+.prev , .next{
+    position: absolute;
+    top: 200px;
+    transform: translateY(-50%);
+    background: #304e71;
+    color: #fff;
+    width: 2.25rem;
+    height: 2.25rem;
+    display: grid;
+    place-items: center;
+    border-color: transparent;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.prev:hover , .next:hover{
+    background: #24a1e5;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+@media (min-width: 800px){
+    .text{
+        max-width: 45rem;
+    }
+    .prev , .next{
+        width:2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
