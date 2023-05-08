@@ -1,5 +1,4 @@
 *{
-    box-sizing:border-box;
     font-family: 'Poppins';
 }
 /* Styling the quote heading on facilities page */
@@ -70,21 +69,20 @@
 }
 
 /* Styling the Management */
-h1,h2{
+/* h1,h2{
 
     text-transform: capitalize;
     line-height: 1.25; 
     margin-bottom: 0.75rem; 
-}
-h1{
+} */
+/* h1{
     color: #124559;
-    /* text-shadow: 2px 2px 2px #24a1e5; */
     font-size:40px;
-}
-h2{
+} */
+/* h2{
     font-size: 50px;
     
-}
+} */
 
 .section{
     width:90vw;
