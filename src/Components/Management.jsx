@@ -28,6 +28,7 @@ export default  function Management(){
 
     return(
       <>
+      <section className="Management">
       <Scroll />
       <p className="quote" >A strong governing body is the cornerstone of any successful institution, providing leadership, guidance, and stewardship to ensure its long-term success.</p>
     {/* Management details slider */}
@@ -45,7 +46,7 @@ export default  function Management(){
                     return(
                         <article className ={position} key ={id}>
                             <img src={image} alt={name} className="person-img"/>
-                            <h1>{name}</h1>
+                            <h1 className="name">{name}</h1>
                             <p className="title">{title}</p>
                             <p className="text">{quote}</p>
 
@@ -59,6 +60,7 @@ export default  function Management(){
                     <i className="fas fa-arrow-right" />
                 </button>
             </div>
+</section>
 </section>
       </>
     )
