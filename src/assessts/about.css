@@ -1,6 +1,9 @@
 *{
     font-family: 'Poppins';
 }
+.Facilities{
+    background-color: whitesmoke;
+}
 /* Styling the quote heading on facilities page */
 .quote{
     color:#24a1e5;
@@ -28,7 +31,7 @@
 .first, .third{
     width:50%;
     height:600px;
-    background-color:whitesmoke;
+    background-color:white;
     margin-left:1%;
     margin-right:1%;
     justify-content:center;
@@ -39,7 +42,7 @@
 .second, .forth{
     width:50%;
     height:600px;
-    background-color:whitesmoke;
+    background-color:white;
     border-bottom: 4px solid #270580;
     border-radius:4%;
     overflow:hidden;
@@ -47,6 +50,23 @@
     
 
 }
+@media  screen and (max-width:760px){
+    .container{
+        flex-direction: column;
+        width:100%;
+        
+    }
+    .first, .second, .third, .forth{
+        width: 100%;
+        margin-bottom:2%;
+        height:500px;
+       
+    }
+    .quote{
+        font-size:20px;
+    }
+   
+} 
 
 #BusImg{
     height:300px;
@@ -67,16 +87,19 @@
 }
 
 /* Styling the Management */
-/* h1,h2{
+.Management{
+    background-color: whitesmoke;
+}
+ .name{
 
     text-transform: capitalize;
     line-height: 1.25; 
     margin-bottom: 0.75rem; 
-} */
-/* h1{
+} 
+.name{
     color: #124559;
     font-size:40px;
-} */
+} 
 /* h2{
     font-size: 50px;
     
@@ -86,7 +109,7 @@
     width:90vw;
     margin: 4rem auto;
     max-width: 1170px;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 2%;
     padding: 2%;
     border-bottom:4px solid #124559;
