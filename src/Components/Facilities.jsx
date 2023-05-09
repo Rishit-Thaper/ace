@@ -3,10 +3,11 @@ import "../assessts/about.css"
 import Scroll from '../Components/Scroll'
 import bus from "../images/college09.jpeg";
 import hostel from "../images/college01.jpeg";
-import gym from "../images/Gym.jpg";
+import gym from "../images/Gym_Compressed.jpg";
 export default function Facilities(){
     return(
         <>
+        <section className="Facilities">
         {/* Quote heading for facilities ... */}
         <p className='quote'>Our facilities are a tangible representation of our commitment to promoting the growth and success of our students.</p>
         <Scroll />
@@ -53,6 +54,7 @@ export default function Facilities(){
                 </ul>
                 </div>
             </div>
+        </section>
         </section>
         </>
     )
