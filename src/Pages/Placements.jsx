@@ -4,10 +4,13 @@ import CountUp from 'react-countup'
 import {BiMailSend} from 'react-icons/bi'
 import {RiUserLocationFill} from 'react-icons/ri'
 import tpo from '../images/tpo.png'
-// import place1 from '../images/place1.png'
-// import place2 from '../images/place2.png'
-// import place3 from '../images/place3.png'
-// import place4 from '../images/place4.png'
+import recruiter1 from '../images/recruiter1.jpg'
+import recruiter2 from '../images/recruiter2.jpg'
+import recruiter3 from '../images/recruiter3.jpg'
+import recruiter4 from '../images/recruiter4.jpg'
+import recruiter5 from '../images/recruiter5.jpg'
+import recruiter7 from '../images/recruiter7.jpg'
+import recruiter8 from '../images/recruiter8.jpg'
 import Scroll from '../Components/Scroll'
 export default function Placements() {
   return (
@@ -35,6 +38,18 @@ export default function Placements() {
           <p>"ACE ensures that its students receive the best placement offers, regularly conducting employability tests in partnership with leading assessment companies to enhance their employability quotient. The institute is dedicated to bridging the industry-academia gap, resulting in new partnerships with leading corporates. Additionally, ACE is impaneled with all three Defense services: the Army, Navy, and Airforce. ACE, Ambala is a gateway to a wider, brighter, and better world."</p>
           <h3><i><BiMailSend/></i> tpo@ambalacollege.ac.in</h3>
         </div>
+      </div>
+      <div className="recruiters">
+        <h1>Our Recruiters</h1>
+        <marquee behavior="scroll" direction="left">
+          <img src={recruiter1} alt="recruiters" />
+          <img src={recruiter2} alt="recruiters" />
+          <img src={recruiter3} alt="recruiters" />
+          <img src={recruiter4} alt="recruiters" />
+          <img src={recruiter5} alt="recruiters" />
+          <img src={recruiter7} alt="recruiters" />
+          <img src={recruiter8} alt="recruiters" />
+        </marquee>
       </div>
       <p>“Success is where preparation and opportunity meet”</p>
       <Scroll/>
