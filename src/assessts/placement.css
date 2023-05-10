@@ -43,12 +43,48 @@
     margin: 0 10rem 0 10rem;
     border-radius: 15px;
 }
+.tpoInfo{
+    background-image: url('../images/place3.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 15rem 2rem 15rem;
+}
+.tpoInfo img{
+    border-radius: 15px;
+    width: 35%;
+}
+.aboutTPO{
+    padding: 0 2rem 0 2rem;
+}
+.aboutTPO h1{
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+.aboutTPO h2{
+    color: aquamarine;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    padding: 0.5rem 0 0 0;
+}
+.aboutTPO p{
+    padding: 1rem  0 0 0;
+    font-size: 1rem;
+    text-align: justify;
+    color: white;
+}
+.aboutTPO h3{
+    color: aquamarine;
+    padding: 1rem 0 0 0;
+    letter-spacing: 1px;
+}
 .stats p{
     font-family: Play;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     font-weight: 600;
     color:#152b45;
-
+    letter-spacing: 2px;
     padding: 1.5rem;
 }
 
@@ -77,5 +113,26 @@
     }
     .stats p{
         color: #275080;
+    }
+    .tpoInfo{
+        flex-direction: column;
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    .tpoInfo img{
+        width: 100%;
+        padding: 1rem;
+        border-radius: 25px;
+    }
+    .aboutTPO{
+        padding: 0;
+    }
+    .aboutTPO h1{
+        font-size: 2rem;
+    }
+    .aboutTPO h2{
+        font-size: 1rem;
+    }
+    .aboutTPO p{
+        font-size: 1rem;
     }
 }

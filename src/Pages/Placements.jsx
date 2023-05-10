@@ -1,7 +1,9 @@
 import React from 'react'
 import '../assessts/placement.css'
 import CountUp from 'react-countup'
+import {BiMailSend} from 'react-icons/bi'
 import {RiUserLocationFill} from 'react-icons/ri'
+import tpo from '../images/tpo.png'
 // import place1 from '../images/place1.png'
 // import place2 from '../images/place2.png'
 // import place3 from '../images/place3.png'
@@ -24,9 +26,17 @@ export default function Placements() {
             <p> <CountUp id="count" end={21}/>Lac Highest package  </p>
             <p> <CountUp id="count" end={30}/>+ Companies  </p> 
         </div>
-
       </div>
-
+      <div className="tpoInfo">
+        <img src={tpo} alt="tpo" />
+        <div className="aboutTPO">
+          <h1>Mr. Ajay Pal Singh</h1>
+          <h2>Air Veteran | Training & Placement Officer</h2>
+          <p>"ACE ensures that its students receive the best placement offers, regularly conducting employability tests in partnership with leading assessment companies to enhance their employability quotient. The institute is dedicated to bridging the industry-academia gap, resulting in new partnerships with leading corporates. Additionally, ACE is impaneled with all three Defense services: the Army, Navy, and Airforce. ACE, Ambala is a gateway to a wider, brighter, and better world."</p>
+          <h3><i><BiMailSend/></i> tpo@ambalacollege.ac.in</h3>
+        </div>
+      </div>
+      <p>“Success is where preparation and opportunity meet”</p>
       <Scroll/>
     </div>
   )
