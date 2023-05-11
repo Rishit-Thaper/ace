@@ -33,7 +33,6 @@ import Facilities from './Components/Facilities';
 import Management from './Components/Management';
 
 function App() {
-
   return (
     <>
     <BrowserRouter>
@@ -68,11 +67,6 @@ function App() {
         <Route path='/placements' element={<Placements/>}/>
         <Route path='/blogs' element={<Blogs/>}/>
         <Route path= '/blogs/:id' element={<BlogContent/>}/>
-        {/*<Route path='/programs' element={<Academics/>}/>
-        <Route path='/photo-gallery' element={<Academics/>}/>
-        <Route path='/events' element={<Academics/>}/>
-        <Route path='/sports' element={<Academics/>}/>
-        */}
       </Routes>
       <Footer/>
     </BrowserRouter>

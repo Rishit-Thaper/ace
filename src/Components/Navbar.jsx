@@ -139,7 +139,7 @@ export default function Navbar() {
               
                 <Link to = "/">Academic Calender</Link>
                 <Link to = "/">Careers</Link>
-                <Link to = "/">Blog</Link>
+                <Link to = "/blogs">Blog</Link>
                 <Link to="/">Download Brochure</Link>
                 <Link to="/">Admission Queries</Link>
               
@@ -217,7 +217,7 @@ export default function Navbar() {
                   <Link onClick={handleLinkClick} to = "/societies">Our Societies</Link>
                   <Link onClick={handleLinkClick} to = "/events">Co-curricular Activities</Link>
                   <Link onClick={handleLinkClick} to = "/sports">Sports Activities</Link>
-                  <Link onClick={handleLinkClick} to = "/photo-gallery">Stories of ACE</Link>
+                  <Link onClick={handleLinkClick} to = "/blogs">Stories of ACE</Link>
                   <Link onClick={handleLinkClick} to = "/programs">Faculty & Student Development Program</Link>
                 </div>):null}
             </div>
