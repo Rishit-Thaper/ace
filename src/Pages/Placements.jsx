@@ -4,6 +4,7 @@ import CountUp from 'react-countup'
 import {BiMailSend} from 'react-icons/bi'
 import {RiUserLocationFill} from 'react-icons/ri'
 import tpo from '../images/tpo.png'
+import { Link } from 'react-router-dom'
 import recruiter1 from '../images/recruiter1.jpg'
 import recruiter2 from '../images/recruiter2.jpg'
 import recruiter3 from '../images/recruiter3.jpg'
@@ -51,7 +52,12 @@ export default function Placements() {
           <img src={recruiter8} alt="recruiters" />
         </marquee>
       </div>
-      <p>“Success is where preparation and opportunity meet”</p>
+      <p className='placeQuote'>“Success is where preparation and opportunity meet”</p>
+      <div className="finalDiv">
+        <h1>Looking to jumpstart your future with ACE?</h1>
+        <Link to='/query'><button>Apply Now</button></Link>
+        <Link to='/brochure'><button>Download Brochure</button></Link>
+      </div>
       <Scroll/>
     </div>
   )

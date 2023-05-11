@@ -23,9 +23,11 @@ import Query from './Components/Query';
 import Eru from './Components/Eru';
 import Sports from './Pages/Sports';
 import Csi from './Components/Csi';
+import Blogs from './Components/Blogs'
 import Bio from './Components/Bio';
 import Placements from './Pages/Placements';
 import Iete from './Components/Iete';
+import BlogContent from './Pages/BlogContent';
 import Dc from './Components/Dc';
 import Facilities from './Components/Facilities';
 import Management from './Components/Management';
@@ -64,6 +66,8 @@ function App() {
         <Route path='/management' element={<Management />} />
         <Route path='/sports' element={<Sports/>}/>
         <Route path='/placements' element={<Placements/>}/>
+        <Route path='/blogs' element={<Blogs/>}/>
+        <Route path= '/blogs/:id' element={<BlogContent/>}/>
         {/*<Route path='/programs' element={<Academics/>}/>
         <Route path='/photo-gallery' element={<Academics/>}/>
         <Route path='/events' element={<Academics/>}/>

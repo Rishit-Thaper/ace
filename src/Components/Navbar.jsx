@@ -153,7 +153,7 @@ export default function Navbar() {
         <Link to='/'><img src={ACE} alt="logo"/></Link>
 
             <div className="apply">
-              <Link><button><i class="fa-regular fa-hand-pointer"></i> Apply Now</button></Link>
+              <Link to='/query'><button><i class="fa-regular fa-hand-pointer"></i> Apply Now</button></Link>
             </div>
 
             <div className="hamburger">
@@ -217,7 +217,7 @@ export default function Navbar() {
                   <Link onClick={handleLinkClick} to = "/societies">Our Societies</Link>
                   <Link onClick={handleLinkClick} to = "/events">Co-curricular Activities</Link>
                   <Link onClick={handleLinkClick} to = "/sports">Sports Activities</Link>
-                  <Link onClick={handleLinkClick} to = "/photo-gallery">Photo Gallery</Link>
+                  <Link onClick={handleLinkClick} to = "/photo-gallery">Stories of ACE</Link>
                   <Link onClick={handleLinkClick} to = "/programs">Faculty & Student Development Program</Link>
                 </div>):null}
             </div>

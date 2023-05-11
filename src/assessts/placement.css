@@ -42,6 +42,7 @@
     background-size: cover;
     margin: 0 10rem 0 10rem;
     border-radius: 15px;
+    padding-bottom: 2rem;
 }
 .tpoInfo{
     background-image: url('../images/place3.png');
@@ -86,10 +87,44 @@
 .recruiters img{
     width: 40%;
 }
+marquee{
+    padding: 1rem;
+}
+.placeQuote{
+    text-align: center;
+    color: #152b45;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 600;
+}
 .recruiters h1{
     padding-bottom: 1rem;
     font-size: 3rem;
     color: #152b45;
+}
+.finalDiv{
+    background-image: linear-gradient(#124559a2,#124559a2),url(../images/ACE-Banner.jpg);
+    background-size: cover;
+    padding: 2rem;
+    min-height: 60vh;
+    text-align: center;
+}
+.finalDiv h1{
+    color: white;
+    letter-spacing: 2px;
+    padding: 2rem;
+}
+.finalDiv button{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 1rem;
+    background: none;
+    font-weight: 600;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: 2px solid white;
 }
 .stats p{
     font-family: Play;

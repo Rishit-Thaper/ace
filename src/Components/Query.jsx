@@ -44,9 +44,9 @@ export default function Query() {
     <div className="query" style={{borderBottom:"5px solid #24a1e5"}}>
     <div className="queryTagline">
       <Scroll/>
-        <h1>Have a query ?</h1>
-        <h1>Get it resolved</h1>
-        <h3>We are always there for you...</h3>
+        <h1>Let's connect</h1>
+        <h3>Get in touch with us TODAY!!!</h3>
+        <h3>Apply for admission or ask us anything you want to know.</h3>
     </div>
     <div className="queryForm">
         <h3>Enter your details</h3>

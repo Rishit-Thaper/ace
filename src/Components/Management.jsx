@@ -46,7 +46,7 @@ export default  function Management(){
                     return(
                         <article className ={position} key ={id}>
                             <img src={image} alt={name} className="person-img"/>
-                            <h1 className="name">{name}</h1>
+                            <h1 className="name1">{name}</h1>
                             <p className="title">{title}</p>
                             <p className="text">{quote}</p>
 
