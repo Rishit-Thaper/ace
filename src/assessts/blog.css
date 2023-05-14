@@ -1,0 +1,10 @@
+.card-list{
+    display: flex;
+    justify-content: center;
+}
+.blog-card img{
+    width: 25%;
+}
+.blog-card{
+    border: 2px solid black;
+}

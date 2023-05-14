@@ -32,8 +32,12 @@ import Dc from './Components/Dc';
 import Facilities from './Components/Facilities';
 import Management from './Components/Management';
 import Mission from './Components/Mission';
+import useFetch from './hooks/useFetch';
 
 function App() {
+  let {loading, data, error} =useFetch('http://localhost:1337/api/blogs?populate=*')
+  if(loading) return <p>Loading...</p>
+  if(error) return <p>Error!</p>
   return (
     <>
     <BrowserRouter>
@@ -67,8 +71,8 @@ function App() {
         <Route path= '/mission' element={<Mission />} />
         <Route path='/sports' element={<Sports/>}/>
         <Route path='/placements' element={<Placements/>}/>
-        <Route path='/blogs' element={<Blogs/>}/>
-        <Route path= '/blogs/:id' element={<BlogContent/>}/>
+        <Route path='/blogs' element={<Blogs blogs={data?data:""} />}></Route>
+        <Route path='/blogs/:id'element={<BlogContent blogs={data?data:""} />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
