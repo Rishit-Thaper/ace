@@ -31,6 +31,7 @@ import BlogContent from './Pages/BlogContent';
 import Dc from './Components/Dc';
 import Facilities from './Components/Facilities';
 import Management from './Components/Management';
+import Mission from './Components/Mission';
 
 function App() {
   return (
@@ -63,6 +64,7 @@ function App() {
         <Route path='/events' element={<Events/>}/>
         <Route path='/facilities' element={<Facilities />} />
         <Route path='/management' element={<Management />} />
+        <Route path= '/mission' element={<Mission />} />
         <Route path='/sports' element={<Sports/>}/>
         <Route path='/placements' element={<Placements/>}/>
         <Route path='/blogs' element={<Blogs/>}/>

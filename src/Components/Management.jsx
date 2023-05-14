@@ -30,7 +30,8 @@ export default  function Management(){
       <>
       <section className="Management">
       <Scroll />
-      <p className="quote" >A strong governing body is the cornerstone of any successful institution, providing leadership, guidance, and stewardship to ensure its long-term success.</p>
+      <p className="quote" >
+A strong governing body is essential for the long-term success of any institution, providing leadership, guidance, and stewardship.</p>
     {/* Management details slider */}
       <section className="section">
             <div className="section-center">
