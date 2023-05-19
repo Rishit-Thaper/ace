@@ -1,8 +1,12 @@
-import {React} from 'react';
+import {React, useEffect} from 'react';
 import '../assessts/courses.css';
 import applied from '../images/APPLIED.jpeg'
 import Scroll from './Scroll';
 export default function Applied() {
+  useEffect(() => {
+    document.title = 'ACE | Departments';
+  }, []
+  );
   return (
     <div className='about_dep'>
     <Scroll/>

@@ -1,11 +1,13 @@
-import {React,useEffect,useState} from 'react'
+import {React, useState, useEffect} from 'react'
 import '../assessts/home.css';
 import Course from '../Components/Course';
 import Scroll from '../Components/Scroll';
 import { Link } from 'react-router-dom';
 import Carousel from '../Components/Caraousel';
+import Blogs from '../Components/Blogs';
 
-export default function Home() {
+export default function Home({blogs}) {
+  
   const[message, setMessage] = useState(0);
   const dataArray = [
     {
@@ -20,7 +22,9 @@ export default function Home() {
   ]
   useEffect(() => {
     document.title = 'ACE | Home';
-  }, []);
+  }, []
+  );
+  
   return(
     <>
     <div className='main'>
@@ -48,7 +52,7 @@ export default function Home() {
   <Link to='/about'><button className='know'>Know More</button></Link>
 </div>
 </section>
-
+<Blogs blogs={blogs}/>
 <section>
   <Carousel/>
   <div className="query-1">

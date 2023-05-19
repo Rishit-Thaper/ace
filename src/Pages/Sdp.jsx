@@ -1,8 +1,12 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import Scroll from '../Components/Scroll'
 import '../assessts/courses.css'
 import sdp from '../images/sdp.png'
 export default function Sdp() {
+  useEffect(() => {
+    document.title = 'ACE | Skill Development Progran';
+  }, []
+  );
   return (
     <div className='nptel'>
       <div className="div1">

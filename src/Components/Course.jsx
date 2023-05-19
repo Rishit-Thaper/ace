@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import {SiOpenai} from "react-icons/si";
@@ -6,6 +6,10 @@ import {BsRobot} from "react-icons/bs";
 import Scroll from './Scroll';
 import { FcBiotech,FcElectronics,FcCommandLine,FcAutomatic } from "react-icons/fc";
 function Course() {
+  useEffect(() => {
+    document.title = 'ACE | Departments';
+  }, []
+  );
   return (
     <section className='course-section'>
     <div className="courses">

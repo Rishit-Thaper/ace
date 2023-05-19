@@ -37,14 +37,14 @@ import useFetch from './hooks/useFetch';
 function App() {
   let {loading, data, error} =useFetch('http://localhost:1337/api/blogs?populate=*')
   if(loading) return <p>Loading...</p>
-  if(error) return <p>Error!</p>
+  if(error) return <p>There is a network error</p>
   return (
     <>
     <BrowserRouter>
       <Navbar/>
       <Routes>
         <Route path='/query' element={<Query/>}/>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<Home blogs={data?data:""}/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/nptel' element={<Nptel/>}/>
         <Route path='/departments' element={<Departments/>}/>

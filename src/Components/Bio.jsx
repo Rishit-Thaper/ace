@@ -4,6 +4,10 @@ import bt from '../images/BT1.jpg'
 import btLab from '../images/BT_LAB.png';
 export default function Bio() {
   useEffect(() => {
+    document.title = 'ACE | Departments';
+  }, []
+  );
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (

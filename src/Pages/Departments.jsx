@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import '../assessts/department.css';
 import me from '../images/ME_DEP.png'
@@ -10,6 +10,10 @@ import auto from '../images/AUTO_DEP.png'
 import aiml from '../images/AIML_dEP.png'
 import Scroll from '../Components/Scroll'
 function Departments() {
+  useEffect(() => {
+    document.title = 'ACE | Departments';
+  }, []
+  );
   return (
     <>
       <section className='departments'>

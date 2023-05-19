@@ -1,9 +1,13 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import '../assessts/societies.css';
 import iete from '../images/iete.png'
 import Scroll from './Scroll';
 
 export default function Iete() {
+  useEffect(() => {
+    document.title = 'ACE | Societies';
+  }, []
+  );
   return (
     <div className='mainSociety'>
     <div className='aboutSociety'>

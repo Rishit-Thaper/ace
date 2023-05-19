@@ -5,8 +5,10 @@ import bt from '../images/BT1.jpg'
 import btLab from '../images/BT_LAB.png';
 export default function Bt() {
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    window.scrollTo(0,0);
+    document.title = 'ACE | Departments';
+  }, []
+  );
   return (
     <div className='about_dep'>
       <h1>Department of Bio-Technology Engineering</h1>

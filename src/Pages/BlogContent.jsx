@@ -1,8 +1,12 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import Scroll from '../Components/Scroll';
 import '../assessts/blog.css';
 const BlogContent = ({ blogs }) => {
+  useEffect(() => {
+    document.title = 'ACE | Stories';
+  }, []
+  );
   const { id } = useParams();
 
   const blog = blogs.find((blog) => blog.id === parseInt(id));
@@ -13,11 +17,17 @@ const BlogContent = ({ blogs }) => {
 
   return (
     
-    <div>
+    <div className='contentHeader'>
       <Scroll/>
-      <img src={`http://localhost:1337${blog.attributes.blogMedia.data[0].attributes.url}`} />
       <h1>{blog.attributes.blogTitle}</h1>
+      <img className='topImg' src={`http://localhost:1337${blog.attributes.blogMedia.data[0].attributes.url}`} />
+      <p>{blog.attributes.blogDescription}</p>
+      
       <div>{blog.attributes.blogContent}</div>
+
+      {blog.attributes.blogMedia.data.map((image) => (
+  <img key={image.id} src={`http://localhost:1337${image.attributes.url}`} alt={blog.attributes.blogtitle} />
+))}
     </div>
   );
 };

@@ -1,8 +1,12 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import Scroll from '../Components/Scroll'
 import '../assessts/courses.css'
 import nptel from '../images/nptel.png'
 export default function Nptel() {
+  useEffect(() => {
+    document.title = 'ACE | NPTEL';
+  }, []
+  );
   return (
     <div className='nptel'>
       <div className="div1">

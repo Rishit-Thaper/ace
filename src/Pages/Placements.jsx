@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import '../assessts/placement.css'
 import CountUp from 'react-countup'
 import {BiMailSend} from 'react-icons/bi'
@@ -14,6 +14,10 @@ import recruiter7 from '../images/recruiter7.jpg'
 import recruiter8 from '../images/recruiter8.jpg'
 import Scroll from '../Components/Scroll'
 export default function Placements() {
+  useEffect(() => {
+    document.title = 'ACE | Placements';
+  }, []
+  );
   return (
     <div>
       <div className="placements">

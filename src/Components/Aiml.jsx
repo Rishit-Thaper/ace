@@ -5,8 +5,9 @@ import Scroll from './Scroll';
 import aimlLab from '../images/AIML_dEP.png'
 export default function Aiml() {
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    document.title = 'ACE | Departments';
+  }, []
+  );
   return (
       <div className='about_dep'>
         <h1>Department of Artificial Intelligence & Machine Learning</h1>
