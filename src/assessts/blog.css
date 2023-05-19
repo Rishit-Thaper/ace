@@ -1,10 +1,22 @@
 .card-list{
-    display: flex;
-    justify-content: center;
+    padding: 2rem;
+    background-color: whitesmoke;
 }
 .blog-card img{
     width: 25%;
+    border-radius: 15px;
+}
+.card-body{
+    padding:  0 0 0 1rem;
 }
 .blog-card{
-    border: 2px solid black;
+    padding: 1rem;
+    display: flex;
+    border-top: 2px solid #275080;
+    border-left: 2px solid #275080;
+    border-right: 2px solid #275080;
+    border-bottom: 5px solid #275080;
+    background-color: white;
+    margin: 2rem;
+    border-radius: 15px;
 }
