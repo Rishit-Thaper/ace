@@ -173,7 +173,7 @@ export default function Navbar() {
                   <Link onClick={handleLinkClick} to = "/facilities">Facilities</Link>
                   <Link onClick={handleLinkClick} to = "/about">Approval & Affliation</Link>
                   <Link onClick={handleLinkClick} to="/about">Awards & Ranking</Link>
-                  <Link onClick={handleLinkClick} to="/about">Social Responsibility </Link>
+                  <Link onClick={handleLinkClick} to="/socialresponsibility">Social Responsibility </Link>
               
                 </div>): null}
             </div>
