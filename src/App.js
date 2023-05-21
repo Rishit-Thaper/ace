@@ -32,7 +32,6 @@ import Dc from './Components/Dc';
 import Facilities from './Components/Facilities';
 import Management from './Components/Management';
 import Mission from './Components/Mission';
-
 import useFetch from './hooks/useFetch';
 import Career from './Pages/Career';
 import SocialRespo from './Components/Social_Responsibility';
