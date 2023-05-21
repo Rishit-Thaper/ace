@@ -6,7 +6,11 @@ const Blogs = ({blogs}) => {
 
     console.log("Blog Object")
     console.log(blogs)
+    const reversedBlogs = [...blogs].reverse();
 
+    console.log("revrse Blog Object")
+
+    console.log(reversedBlogs);
     useEffect(() => {
       document.title = 'ACE | Stories';
     }, []
@@ -19,7 +23,7 @@ const Blogs = ({blogs}) => {
 
       <div className="card-list">
         <Scroll/>
-        {blogs.map((blog) => (
+        {reversedBlogs.map((blog) => (
 
           <div key={blog.id} to={`/blogs/${blog.id}`} className="blog-card">
             <img src={`http://localhost:1337${blog.attributes.blogMedia.data[0].attributes.url}`} alt={blog.attributes.blogtitle} />

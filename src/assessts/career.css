@@ -32,3 +32,19 @@
     color: #24a1e5;
     background: none;
 }
+.job-card{
+    padding: 3%;
+}
+@media screen and (max-width:480px) {
+    #careerTag{
+        padding: 5%;
+        font-size: 1rem;
+    }
+    .jobHead{
+        font-size: 1.5rem;
+        padding: 5%;
+    }
+    .job-card{
+        padding: 5%;
+    }
+}

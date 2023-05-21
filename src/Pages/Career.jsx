@@ -31,10 +31,11 @@ const Career = ({jobs}) => {
                     <div key={job.id} className="job-card">
                         <div className="job-card-details">
                             <h3 className='jobTitle'>{job.attributes.jobTitle}</h3>
-                            <h4 className='jobTitle'>{job.attributes.organisation}</h4>
-                            <p className="jobDescription">Details: {job.attributes.jobDetails}</p>
-                            <p className="jobDescription">Apply Before: {job.attributes.lastDate}</p>
-                            <p className="jobDescription">Vacancy: {job.attributes.vacancy}</p>
+                            <h4 className='organisation'>{job.attributes.organisation}</h4>
+                            <p className="jobDetails">Details: {job.attributes.jobDetails}</p>
+                            <p className='jobType'>Job Type: {job.attributes.jobType}</p>
+                            <p className='qualification'>Qualification Required: {job.attributes.qualificationRequired}</p>
+                            <p className="vacancy">Vacancy: {job.attributes.vacancy}</p>
                         </div>
                            <Link to='/apply'><button>Apply Now</button></Link>
                     </div>
@@ -51,10 +52,11 @@ const Career = ({jobs}) => {
                     <div key={job.id} className="job-card">
                         <div className="job-card-details">
                             <h3 className='jobTitle'>{job.attributes.jobTitle}</h3>
-                            <h4 className='jobTitle'>{job.attributes.organisation}</h4>
-                            <p className="jobDescription">Details: {job.attributes.jobDetails}</p>
-                            <p className="jobDescription">Apply Before: {job.attributes.lastDate}</p>
-                            <p className="jobDescription">Vacancy: {job.attributes.vacancy}</p>
+                            <h4 className='organisation'>{job.attributes.organisation}</h4>
+                            <p className="jobDetails">Details: {job.attributes.jobDetails}</p>
+                            <p className='jobType'>Job Type: {job.attributes.jobType}</p>
+                            <p className='qualification'>Qualification Required: {job.attributes.qualificationRequired}</p>
+                            <p className="vacancy">Vacancy: {job.attributes.vacancy}</p>
                         </div>
                            <Link to='/apply'><button>Apply Now</button></Link>
                     </div>

@@ -138,10 +138,10 @@ export default function Navbar() {
               {showDropdown6 || hoverDropdown6 ? (<div className="dropdown-content" onMouseEnter={handleMouseEnterDropdown6} onMouseLeave={handleMouseLeaveDropdown6}>
               
                 <Link to = "/">Academic Calender</Link>
-                <Link to = "/">Careers</Link>
+                <Link to = "/careers">Careers</Link>
                 <Link to = "/blogs">Blog</Link>
                 <Link to="/">Download Brochure</Link>
-                <Link to="/">Admission Queries</Link>
+                <Link to="/query">Admission Queries</Link>
               
               </div>):null}
             </div>

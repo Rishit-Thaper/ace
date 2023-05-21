@@ -26,6 +26,12 @@
     },
     "organisation": {
       "type": "string"
+    },
+    "qualificationRequired": {
+      "type": "string"
+    },
+    "jobType": {
+      "type": "string"
     }
   }
 }
