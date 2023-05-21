@@ -32,8 +32,10 @@ import Dc from './Components/Dc';
 import Facilities from './Components/Facilities';
 import Management from './Components/Management';
 import Mission from './Components/Mission';
+
 import useFetch from './hooks/useFetch';
 import Career from './Pages/Career';
+import SocialRespo from './Components/Social_Responsibility';
 import Apply from './Pages/Apply';
 
 function App() {
@@ -74,6 +76,9 @@ function App() {
         <Route path= '/mission' element={<Mission />} />
         <Route path='/sports' element={<Sports/>}/>
         <Route path='/placements' element={<Placements/>}/>
+        <Route path='/blogs' element={<Blogs/>}/>
+        <Route path= '/blogs/:id' element={<BlogContent/>}/>
+        <Route path='/socialresponsibility' element={<SocialRespo />} />
         <Route path='/blogs' element={<Blogs blogs={data?data:""} />}></Route>
         <Route path='/blogs/:id'element={<BlogContent blogs={data?data:""} />} />
         <Route path='/careers' element={<Career jobs={jobData?jobData:""}/>}/>
