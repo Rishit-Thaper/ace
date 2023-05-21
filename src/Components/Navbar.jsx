@@ -229,6 +229,9 @@ export default function Navbar() {
                   <Link onClick={handleLinkClick} to = "/our-collaborations">Industrial Collaborations</Link>
                 </div>):null}
             </div>
+            <div className="dropdown1" onClick={handleLinkClick}>
+                <Link to="/careers"><button className='dropbtn'>Careers</button></Link>
+            </div>
         </div>
       </div>
     </div>

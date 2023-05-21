@@ -29,7 +29,6 @@ const Blogs = ({blogs}) => {
           <Link key={blog.id} to={`/blogs/${blog.id}`} className="card"><button className='navigator'>Read More</button></Link>
             </div>
           </div>
-  
         ))}
   
       </div>
