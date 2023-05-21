@@ -34,6 +34,7 @@ import Management from './Components/Management';
 import Mission from './Components/Mission';
 import useFetch from './hooks/useFetch';
 import Career from './Pages/Career';
+import Apply from './Pages/Apply';
 
 function App() {
   let {loading, data, error} =useFetch('http://localhost:1337/api/blogs?populate=*')
@@ -76,6 +77,7 @@ function App() {
         <Route path='/blogs' element={<Blogs blogs={data?data:""} />}></Route>
         <Route path='/blogs/:id'element={<BlogContent blogs={data?data:""} />} />
         <Route path='/careers' element={<Career jobs={jobData?jobData:""}/>}/>
+        <Route path='/apply' element={<Apply/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

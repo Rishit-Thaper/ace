@@ -99,7 +99,8 @@ export default function Home() {
         </div>
       ))}
     </div>
-  </div>
+</div>
+<Link to="/blogs">Explore ACE</Link>
 <section>
   <Carousel/>
   <div className="query-1">
