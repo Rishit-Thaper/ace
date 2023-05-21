@@ -1,10 +1,14 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import "../assessts/about.css"
 import Scroll from '../Components/Scroll'
 import bus from "../images/college09.jpeg";
 import hostel from "../images/college01.jpeg";
 import gym from "../images/Gym_Compressed.jpg";
 export default function Facilities(){
+    useEffect(() => {
+        document.title = 'ACE | Facilities';
+      }, []
+      );
     return(
         <>
         <section className="Facilities">

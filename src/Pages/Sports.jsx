@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import {Fade} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import {MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight} from 'react-icons/md'
@@ -10,6 +10,10 @@ import sports3 from '../images/sports3.jpg'
 
 import Scroll from '../Components/Scroll'
 export default function Sports() {
+  useEffect(() => {
+    document.title = 'ACE | Sports';
+  }, []
+  );
   const buttonStyle = {
     width: "30px",
     background: 'none',

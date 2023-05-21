@@ -32,16 +32,24 @@ import Dc from './Components/Dc';
 import Facilities from './Components/Facilities';
 import Management from './Components/Management';
 import Mission from './Components/Mission';
+
+import useFetch from './hooks/useFetch';
+import Career from './Pages/Career';
 import SocialRespo from './Components/Social_Responsibility';
 
+
 function App() {
+  let {loading, data, error} =useFetch('http://localhost:1337/api/blogs?populate=*')
+  let {loading: load, data: jobData, error: err} =useFetch('http://localhost:1337/api/jobs?populate=*')
+  if(load || loading) return <p>Loading</p>
+  if(error || err) return <p>There is a network error</p>
   return (
     <>
     <BrowserRouter>
       <Navbar/>
       <Routes>
         <Route path='/query' element={<Query/>}/>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<Home blogs={data?data:""}/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/nptel' element={<Nptel/>}/>
         <Route path='/departments' element={<Departments/>}/>
@@ -71,6 +79,9 @@ function App() {
         <Route path='/blogs' element={<Blogs/>}/>
         <Route path= '/blogs/:id' element={<BlogContent/>}/>
         <Route path='/socialresponsibility' element={<SocialRespo />} />
+        <Route path='/blogs' element={<Blogs blogs={data?data:""} />}></Route>
+        <Route path='/blogs/:id'element={<BlogContent blogs={data?data:""} />} />
+        <Route path='/careers' element={<Career jobs={jobData?jobData:""}/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

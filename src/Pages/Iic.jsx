@@ -1,9 +1,13 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import Scroll from '../Components/Scroll'
 import '../assessts/courses.css'
 import iic from '../images/iic.png'
 export default function Iic() {
+  useEffect(() => {
+    document.title = 'ACE | IIC';
+  }, []
+  );
   return (
     <div className='nptel'>
       <div className="div1">

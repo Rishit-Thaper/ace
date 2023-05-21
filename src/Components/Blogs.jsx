@@ -1,41 +1,43 @@
-import React, { useState, useEffect } from 'react';
+import {React, useEffect} from 'react';
 import { Link } from 'react-router-dom';
-export default function Blogs() {
-  const [blogs, setBlogs] = useState([]);
+import '../assessts/blog.css'
+import Scroll from './Scroll';
+const Blogs = ({blogs}) => {
 
-  useEffect(() => {
-    const fetchData = async () => {
-        try {
-            const response = await fetch('http://localhost:1337/api/blogs?populate=*',{method: "GET"});
-            const json = await response.json();
-            // setBlogs(json);
-            if (Array.isArray(json)) {
-                setBlogs(json);
-              } else {
-                console.error('Invalid data format');
-                console.log(json.data);
-                setBlogs(json.data);
-              }
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchData();
-  }, []);
+    console.log("Blog Object")
+    console.log(blogs)
+    const reversedBlogs = [...blogs].reverse();
 
-  return (
-    <div className="card-list">
-      {blogs.map((blog) => (
-        <Link key={blog.id} to={`/blogs/${blog.id}`} className="card">
-          {/* <img src={blog.image} alt={blog.attributes.blogtitle} /> */}
-          <div className="card-body">
-            <h2>{blog.attributes.blogTitle}</h2>
-            <p>{blog.attributes.blogDescription}</p>
-            <p>{blog.attributes.blogContent}</p>
+    console.log("revrse Blog Object")
+
+    console.log(reversedBlogs);
+    useEffect(() => {
+      document.title = 'ACE | Stories';
+    }, []
+    );
+
+    return (
+      <div className="hero">
+        <h1>Exploring the Vibrant Tapestry of College Life: Recent Activities at ACE</h1>
+        <h2 className='heroSubHeading'>Engaging Events, Inspiring Initiatives, and Memorable Moments that Define Our Campus Community</h2>
+
+      <div className="card-list">
+        <Scroll/>
+        {reversedBlogs.map((blog) => (
+
+          <div key={blog.id} to={`/blogs/${blog.id}`} className="blog-card">
+            <img src={`http://localhost:1337${blog.attributes.blogMedia.data[0].attributes.url}`} alt={blog.attributes.blogtitle} />
+            <div className="card-body">
+              <h2 className='blogTitle'>{blog.attributes.blogTitle}</h2>
+              <p className="blogDescription">{blog.attributes.blogDescription}</p>
+          <Link key={blog.id} to={`/blogs/${blog.id}`} className="card"><button className='navigator'>Read More</button></Link>
+            </div>
           </div>
-        </Link>
-      ))}
-    </div>
-    // <div>blogs</div>
-  );
+        ))}
+  
+      </div>
+      </div>
+    );
 }
+
+export default Blogs

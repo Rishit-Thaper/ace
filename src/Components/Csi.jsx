@@ -1,9 +1,13 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import '../assessts/societies.css';
 import Scroll from './Scroll';
 import csi from '../images/csi.jpg'
 
 export default function Csi() {
+  useEffect(() => {
+    document.title = 'ACE | Societies';
+  }, []
+  );
   return (
     <div className='mainSociety'>
       <Scroll/>

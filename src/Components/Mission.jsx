@@ -1,8 +1,12 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import "../assessts/about.css"
 import banner from "../images/banner06.png"
 import Scroll from '../Components/Scroll'
 export default function Mission(){
+    useEffect(() => {
+        document.title = 'ACE | About us';
+      }, []
+      );
     return(
         <>
         <Scroll />

@@ -1,9 +1,13 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import '../assessts/courses.css';
 import cse from '../images/college11.jpeg'
 import cseLab from "../images/CSE_LAB.JPG"
 import Scroll from './Scroll';
 export default function Cse() {
+  useEffect(() => {
+    document.title = 'ACE | Departments';
+  }, []
+  );
   return (
     <div className='about_dep'>
       <h1>Department of Computer Science & Engineering</h1>

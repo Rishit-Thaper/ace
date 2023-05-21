@@ -7,6 +7,7 @@ export default function Ece() {
   
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = 'ACE | Departments';
   }, []);
 
   return (

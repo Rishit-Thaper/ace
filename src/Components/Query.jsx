@@ -1,6 +1,10 @@
-import {React, useState} from 'react'
+import {React, useEffect, useState} from 'react'
 import Scroll from './Scroll';
 export default function Query() {
+  useEffect(() => {
+    document.title = 'ACE | Queries';
+  }, []
+  );
 
     const[name, setName] = useState('');
     const[phone, setPhone] = useState('');

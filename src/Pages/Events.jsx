@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import '../assessts/event.css'
 import {Fade} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
@@ -17,6 +17,10 @@ import meet from '../images/meet.jpg'
 
 import aayaam from '../images/aayam.jpg'
 export default function Events() {
+  useEffect(() => {
+    document.title = 'ACE | Events';
+  }, []
+  );
   
   const buttonStyle = {
     width: "30px",

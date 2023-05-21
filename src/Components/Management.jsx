@@ -3,6 +3,10 @@ import "../assessts/about.css"
 import Scroll from '../Components/Scroll';
 import data from "./data";
 export default  function Management(){
+    useEffect(() => {
+        document.title = 'ACE | Management';
+      }, []
+      );
     const [people] = useState(data);
     const [index , setIndex] = useState(0);
 

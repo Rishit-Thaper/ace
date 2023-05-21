@@ -1,9 +1,13 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import '../assessts/societies.css';
 import bt from '../images/APPL_DEP.png'
 import Scroll from './Scroll';
 
 export default function Eru() {
+  useEffect(() => {
+    document.title = 'ACE | Societies';
+  }, []
+  );
   return (
     <div className='mainSociety'>
       <Scroll/>

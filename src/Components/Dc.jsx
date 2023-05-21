@@ -1,9 +1,13 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import '../assessts/societies.css';
 import Scroll from './Scroll';
 import me from '../images/ME.jpg'
 
 export default function Dc() {
+  useEffect(() => {
+    document.title = 'ACE | Societies';
+  }, []
+  );
   return (
     <div className='mainSociety'>
     <div className='aboutSociety'>

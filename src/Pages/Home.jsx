@@ -1,11 +1,13 @@
-import {React,useEffect,useState} from 'react'
+import {React, useState, useEffect} from 'react'
 import '../assessts/home.css';
 import Course from '../Components/Course';
 import Scroll from '../Components/Scroll';
 import { Link } from 'react-router-dom';
 import Carousel from '../Components/Caraousel';
+import Blogs from '../Components/Blogs';
 
 export default function Home() {
+
   const[message, setMessage] = useState(0);
   const dataArray = [
     {
@@ -18,9 +20,39 @@ export default function Home() {
       Message:"Our institution is dedicated to meeting international benchmarks in technical education and serving as a hub for technological advancement. We believe in empowering aspiring entrepreneurs through our incubation center, providing them with modern technological knowledge and emphasizing professional ethics and moral values. Our community of forward-thinking individuals is committed to driving innovation and progress in their respective fields while striving for excellence and creativity in everything we do.",
     }
   ]
+
+  const [data,setData] =useState([])
+  const [error,setError] =useState(null)
+  const [loading,setLoading] =useState(true)
+  
   useEffect(() => {
-    document.title = 'ACE | Home';
-  }, []);
+      const fetchData = async ()=>{
+          setLoading(true)
+          try {
+              const res = await fetch("http://localhost:1337/api/blogs?populate=*")
+              const json = await res.json()
+              console.log(json);
+              setData(json.data);
+              console.log(data);
+              setLoading(false)
+              document.title = 'ACE | Home';
+
+          } catch (error) {
+              setError(error)
+              setLoading(false)
+          }
+      }
+      fetchData();
+    
+  }, [])
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+  const reverseData = [...data].reverse();
+
   return(
     <>
     <div className='main'>
@@ -48,7 +80,26 @@ export default function Home() {
   <Link to='/about'><button className='know'>Know More</button></Link>
 </div>
 </section>
+<div className="hero">
+    <h1>Exploring the Vibrant Tapestry of College Life: Recent Activities at ACE</h1>
+    <h2 className='heroSubHeading'>Engaging Events, Inspiring Initiatives, and Memorable Moments that Define Our Campus Community</h2>
 
+    <div className="card-list">
+      <Scroll/>
+      {reverseData.slice(0, 2).map((blog) => (
+        <div key={blog.id} to={`/blogs/${blog.id}`} className="blog-card">
+          <img src={`http://localhost:1337${blog.attributes.blogMedia.data[0].attributes.url}`} alt={blog.attributes.blogtitle} />
+          <div className="card-body">
+            <h2 className='blogTitle'>{blog.attributes.blogTitle}</h2>
+            <p className="blogDescription">{blog.attributes.blogDescription}</p>
+            <Link key={blog.id} to={`/blogs/${blog.id}`} className="card">
+              <button className='navigator'>Read More</button>
+            </Link>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
 <section>
   <Carousel/>
   <div className="query-1">

@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import '../assessts/department.css';
 import me from '../images/ME_DEP.png'
@@ -8,6 +8,10 @@ import bt from '../images/BT_DEP.png'
 import ece from '../images/ECE_DEP.png'
 import Scroll from '../Components/Scroll'
 function Society() {
+  useEffect(() => {
+    document.title = 'ACE | Societies';
+  }, []
+  );
   return (
     <>
       <section className='departments'>

@@ -1,4 +1,4 @@
-import {React} from 'react';
+import {React, useEffect} from 'react';
 import {FaUserGraduate, FaHandshake} from "react-icons/fa"
 import {TbBulb} from "react-icons/tb";
 import {Fade, Slide} from 'react-slideshow-image';
@@ -18,6 +18,10 @@ import '../assessts/admission.css';
 import Scroll from '../Components/Scroll';
 
 function Admissions() {
+  useEffect(() => {
+    document.title = 'ACE | Admissions';
+  }, []
+  );
 
   const buttonStyle = {
     width: "30px",
