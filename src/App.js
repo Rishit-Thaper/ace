@@ -32,6 +32,7 @@ import Dc from './Components/Dc';
 import Facilities from './Components/Facilities';
 import Management from './Components/Management';
 import Mission from './Components/Mission';
+import SocialRespo from './Components/Social_Responsibility';
 
 function App() {
   return (
@@ -69,6 +70,7 @@ function App() {
         <Route path='/placements' element={<Placements/>}/>
         <Route path='/blogs' element={<Blogs/>}/>
         <Route path= '/blogs/:id' element={<BlogContent/>}/>
+        <Route path='/socialresponsibility' element={<SocialRespo />} />
       </Routes>
       <Footer/>
     </BrowserRouter>

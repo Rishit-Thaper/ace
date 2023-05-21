@@ -1,5 +1,6 @@
 import React from 'react'
 import "../assessts/about.css"
+import banner from "../images/banner06.png"
 import Scroll from '../Components/Scroll'
 export default function Mission(){
     return(
@@ -7,6 +8,7 @@ export default function Mission(){
         <Scroll />
         <section className="His_Mis_Vis">
         <section className="History">
+           
             <div className="His_quote">
             <p>"The history of an institution is not just a collection of past events, but a living legacy that shapes its present and future."</p>
             </div>
@@ -28,12 +30,46 @@ export default function Mission(){
             <div className="Mis_Content">
                 <div className="Mis_Container">
                     <div className="Mission">
-                        <p className="Mis_Vis_Heading">Mission</p>
+                    <p className="Mis_Vis_Heading">Mission</p>
                         <hr className="Underline" />
+                        <img class="Mis_Vis_Banner" src={banner} />
+                        <div>
+                        <ol className="Mis_text">
+                            <li>
+                            Attain global engineering education standards through quality teaching, hands-on training, and applied research in practical projects.
+                            </li>
+                            <li>
+                            Establish a state-of-the-art incubation center to nurture aspiring entrepreneurs and drive manufacturing growth.
+                            </li>
+                            <li>
+                            Foster students' professional ethics and moral values through a transparent, value-based educational system.
+                            </li>
+                            <li>
+                            Develop well-rounded individuals by promoting extracurricular activities, arts, spirituality, and community service.
+                            </li>
+                        </ol>
+                        </div>
                     </div>
                     <div className="Vision">
                         <p className="Mis_Vis_Heading">Vision</p>
                         <hr className="Underline" />
+                        <img class="Mis_Vis_Banner" src={banner} />
+                        <div>
+                            <ol className="Vis_text">
+                                <li>
+                                Enhancing curriculum, teaching methods, and infrastructure to align with global technical education standards.
+                                </li>
+                                <li>
+                                Supporting future entrepreneurs with knowledge of modern technologies and essential skills for successful ventures.
+                                </li>
+                                <li>
+                                Integrating modern technologies across disciplines for success in a digital world.
+                                </li>
+                                <li>
+                                Partnering with international institutions and industries to enhance education and research quality.
+                                </li>
+                            </ol>
+                        </div>
 
                     </div>
 
