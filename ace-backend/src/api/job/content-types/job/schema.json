@@ -23,6 +23,9 @@
     },
     "lastDate": {
       "type": "date"
+    },
+    "organisation": {
+      "type": "string"
     }
   }
 }

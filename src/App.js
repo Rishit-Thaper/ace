@@ -33,11 +33,13 @@ import Facilities from './Components/Facilities';
 import Management from './Components/Management';
 import Mission from './Components/Mission';
 import useFetch from './hooks/useFetch';
+import Career from './Pages/Career';
 
 function App() {
   let {loading, data, error} =useFetch('http://localhost:1337/api/blogs?populate=*')
-  if(loading) return <p>Loading...</p>
-  // if(error) return <p>There is a network error</p>
+  let {loading: load, data: jobData, error: err} =useFetch('http://localhost:1337/api/jobs?populate=*')
+  if(load || loading) return <p>Loading</p>
+  if(error || err) return <p>There is a network error</p>
   return (
     <>
     <BrowserRouter>
@@ -73,6 +75,7 @@ function App() {
         <Route path='/placements' element={<Placements/>}/>
         <Route path='/blogs' element={<Blogs blogs={data?data:""} />}></Route>
         <Route path='/blogs/:id'element={<BlogContent blogs={data?data:""} />} />
+        <Route path='/careers' element={<Career jobs={jobData?jobData:""}/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
