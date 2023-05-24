@@ -187,7 +187,7 @@ export default function Navbar() {
                   <Link onClick={handleLinkClick} to = "/departments">Find your Program</Link>
                   <Link onClick={handleLinkClick} to = "/">Download Brochure</Link>
                   <Link onClick={handleLinkClick} to = "https://www.ambalacollege.com/wp-content/uploads/2018/06/fee.pdf">FEE DEposit Form</Link>
-                  <Link onClick={handleLinkClick} to = "/admissions">Scholarship</Link>
+                  <Link onClick={handleLinkClick} to = "/scholarship">Scholarship</Link>
                   <Link onClick={handleLinkClick} to = "https://www.ambalacollege.com/wp-content/uploads/2018/06/BtechAdmissionForm.pdf">Admission Form</Link>
                   <Link onClick={handleLinkClick} to = "/contact">Contact us</Link>
 

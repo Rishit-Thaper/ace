@@ -599,8 +599,8 @@ html{
     .queFeed{
         flex-direction: column;
     }
-    .proSublist h2{
-        
+    .story{
+        text-align: center;
     }
     .queryBut, .feedBut{
         margin: 1rem;

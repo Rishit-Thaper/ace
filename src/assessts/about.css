@@ -91,7 +91,9 @@
         margin: 0;
     }
 }
-
+.Mis_text li{
+    font-size: .7rem;
+}
 #BusImg{
     height:300px;
     width:100%;
@@ -263,7 +265,6 @@ article.lastSlide{
     align-items:center;
     justify-content:center;
     margin:1%;
-    
 }
 .Mis_Container{
     width:100%;
@@ -274,7 +275,7 @@ article.lastSlide{
 
 }
 .Mission, .Vision{
-    width:50%;
+    width: auto;
     height:600px;
     background-color:white;
     margin-left:1%;
@@ -283,7 +284,6 @@ article.lastSlide{
     border-bottom: 8px solid #24a1e5;
     border-radius:4%;
     overflow: hidden; 
-    
 }
 .Mis_Vis_Heading{
     color:#275080;
@@ -291,39 +291,38 @@ article.lastSlide{
     font-size:25px;
     font-weight:bolder;
     padding:2%;
-    
 }
 .Underline{
     background-color:#275080;
     height:5px;
 }
-.Mis_Vis_Banner{
-    height:595px;
-    width:100%;
-    object-fit:cover;
+.mission-vision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
-.Mis_text{
-    position:relative;
-    bottom:580px;
-    left:4%;
-    color:white;
-    font-size: 20px;
-    padding:2%;
-    line-height:50px;
-    
-
+.vision, .mission{
+    margin: 1rem;
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    background-image: url('../images/banner06.png');
 }
-.Vis_text{
-    position:relative;
-    bottom:600px;
-    left:4%;
-    color:white;
-    font-size: 20px;
-    padding:5%;
-    line-height:55px;
-    
-
+.vision h4, .mission h4{
+    font-size: 2rem;
 }
+.fade-each1 img{
+    filter: brightness(50%);
+    width: 100%;
+}
+.vision ol, .mission ol{
+    padding: 1rem 0 0 0;
+}
+.vision li, .mission li{
+    font-size: 0.9rem;
+    line-height: 32px;
+}   
 @media screen and (max-width:760px){
     .His_text{
         font-size:2vh;
@@ -346,7 +345,7 @@ article.lastSlide{
 }
 @media screen and (max-width:480px){
     .His_Content{
-        height:900px;
+        height: auto;
     }
     .His_quote{
         font-size:20px;

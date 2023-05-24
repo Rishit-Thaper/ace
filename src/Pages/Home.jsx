@@ -35,7 +35,6 @@ export default function Home() {
               setData(json.data);
               console.log(data);
               setLoading(false)
-              document.title = 'ACE | Home';
 
           } catch (error) {
               setError(error)
@@ -45,6 +44,12 @@ export default function Home() {
       fetchData();
     
   }, [])
+  useEffect(() => {
+  
+    document.title = 'ACE | Home';
+    
+  }, [])
+  
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -100,7 +105,7 @@ export default function Home() {
       ))}
     </div>
 </div>
-<Link to="/blogs">Explore ACE</Link>
+<Link to="/blogs"><button className='story'>Explore More Stories</button></Link>
 <section>
   <Carousel/>
   <div className="query-1">

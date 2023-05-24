@@ -1,4 +1,6 @@
 import './App.css';
+import useFetch from './hooks/useFetch';
+import {BrowserRouter,Route,Routes} from "react-router-dom";
 import Navbar from './Components/Navbar';
 import Me from './Components/Me';
 import Cse from './Components/Cse';
@@ -18,7 +20,6 @@ import Admissions from './Pages/Admissions';
 import Departments from './Pages/Departments';
 import Contact from './Pages/Contact';
 import Footer from './Components/Footer';
-import {BrowserRouter,Route,Routes}from "react-router-dom";
 import Query from './Components/Query';
 import Eru from './Components/Eru';
 import Sports from './Pages/Sports';
@@ -32,23 +33,24 @@ import Dc from './Components/Dc';
 import Facilities from './Components/Facilities';
 import Management from './Components/Management';
 import Mission from './Components/Mission';
-import useFetch from './hooks/useFetch';
 import Career from './Pages/Career';
 import SocialRespo from './Components/Social_Responsibility';
 import Apply from './Pages/Apply';
+import Scholarship from './Pages/Scholarship';
 
 function App() {
-  let {loading, data, error} =useFetch('http://localhost:1337/api/blogs?populate=*')
-  let {loading: load, data: jobData, error: err} =useFetch('http://localhost:1337/api/jobs?populate=*')
-  if(load || loading) return <p>Loading</p>
-  if(error || err) return <p>There is a network error</p>
+  const { loading: blogLoading, data: blogData, error: blogError } = useFetch('http://localhost:1337/api/blogs?populate=*');
+  console.log(blogData);
+  const { loading: jobLoading, data: jobData, error: jobError } = useFetch('http://localhost:1337/api/jobs');
+  if(blogLoading || jobLoading) return <p>Loading...</p>
+  if(blogError || jobError) return <p>There is a network error</p>
   return (
     <>
     <BrowserRouter>
       <Navbar/>
       <Routes>
         <Route path='/query' element={<Query/>}/>
-        <Route path='/' element={<Home blogs={data?data:""}/>}/>
+        <Route path='/' element={<Home blogs={blogData || []}/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/nptel' element={<Nptel/>}/>
         <Route path='/departments' element={<Departments/>}/>
@@ -75,13 +77,12 @@ function App() {
         <Route path= '/mission' element={<Mission />} />
         <Route path='/sports' element={<Sports/>}/>
         <Route path='/placements' element={<Placements/>}/>
-        <Route path='/blogs' element={<Blogs/>}/>
-        <Route path= '/blogs/:id' element={<BlogContent/>}/>
-        <Route path='/socialresponsibility' element={<SocialRespo />} />
-        <Route path='/blogs' element={<Blogs blogs={data?data:""} />}></Route>
-        <Route path='/blogs/:id'element={<BlogContent blogs={data?data:""} />} />
-        <Route path='/careers' element={<Career jobs={jobData?jobData:""}/>}/>
+        <Route path='/socialresponsibility' element={<SocialRespo/>} />
+        <Route path='/blogs' element={<Blogs blogs={blogData ? blogData : []} />} />
+        <Route path="/blogs/:id" element={<BlogContent blogs={blogData || []} />} />
+        <Route path='/careers' element={<Career jobs={jobData ? jobData:""}/>}/>
         <Route path='/apply' element={<Apply/>}/>
+        <Route path='/scholarship' element={<Scholarship/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
