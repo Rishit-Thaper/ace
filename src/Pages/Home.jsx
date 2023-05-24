@@ -104,8 +104,9 @@ export default function Home() {
         </div>
       ))}
     </div>
-</div>
 <Link to="/blogs"><button className='story'>Explore More Stories</button></Link>
+
+</div>
 <section>
   <Carousel/>
   <div className="query-1">

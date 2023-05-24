@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_applicants",
+  "info": {
+    "singularName": "job-applicant",
+    "pluralName": "job-applicants",
+    "displayName": "Job Applicant"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "resume": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "contact": {
+      "type": "string"
+    },
+    "qualification": {
+      "type": "string"
+    },
+    "coverLetter": {
+      "type": "text"
+    }
+  }
+}

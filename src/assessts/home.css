@@ -114,6 +114,20 @@ html{
     border-right: 1px solid #12455900;
     border-bottom: 4px solid #124559;
 }
+.hero .story{
+    display: block;
+    margin: auto;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background: #124559;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.hero .story:hover{
+    background: #01161E;
+}
 .course h1{
     font-size: 1.15rem;
     /* padding: .5rem; */
@@ -599,9 +613,7 @@ html{
     .queFeed{
         flex-direction: column;
     }
-    .story{
-        text-align: center;
-    }
+
     .queryBut, .feedBut{
         margin: 1rem;
         padding: 0.6rem;
