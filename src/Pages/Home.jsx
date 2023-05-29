@@ -82,7 +82,7 @@ export default function Home() {
   <div className="message">
     <p>{dataArray[message].Message}</p>
   </div>
-  <Link to='/about'><button className='know'>Know More</button></Link>
+  <Link to='/mission'><button className='know'>Know More</button></Link>
 </div>
 </section>
 <div className="hero">

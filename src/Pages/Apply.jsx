@@ -10,7 +10,7 @@ export default function Apply() {
   const [qual, setQual] = useState('');
   const [job, setJob] = useState('');
   const [file, setFile] = useState([]);
-
+  
   return (
     <div>
       <div className='jobForm'>
