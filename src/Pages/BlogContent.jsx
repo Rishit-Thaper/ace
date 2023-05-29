@@ -16,14 +16,15 @@ const BlogContent = ({ blogs }) => {
   }
 
   return (
-    
     <div className='contentHeader'>
       <Scroll/>
       <h1>{blog.attributes.blogTitle}</h1>
-      <img className='topImg' src={`http://localhost:1337${blog.attributes.blogMedia.data[0].attributes.url}`} />
-      <p>{blog.attributes.blogDescription}</p>
-      
-      <div>{blog.attributes.blogContent}</div>
+      <div className="contentDiv">
+        <img className='topImg' src={`http://localhost:1337${blog.attributes.blogMedia.data[0].attributes.url}`} />
+        <p>{blog.attributes.blogDescription}</p>
+      </div>
+
+      <p className='mainContent'>{blog.attributes.blogContent}</p>
 
       {blog.attributes.blogMedia.data.map((image) => (
   <img key={image.id} src={`http://localhost:1337${image.attributes.url}`} alt={blog.attributes.blogtitle} />
