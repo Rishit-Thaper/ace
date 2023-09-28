@@ -4,7 +4,8 @@
   "info": {
     "singularName": "job-applicant",
     "pluralName": "job-applicants",
-    "displayName": "Job Applicant"
+    "displayName": "Job Applicant",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,12 +19,12 @@
       "type": "email"
     },
     "resume": {
-      "allowedTypes": [
-        "files"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
     },
     "contact": {
       "type": "string"
@@ -33,6 +34,9 @@
     },
     "coverLetter": {
       "type": "text"
+    },
+    "jobRole": {
+      "type": "string"
     }
   }
 }

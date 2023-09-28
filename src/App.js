@@ -35,7 +35,6 @@ import Management from './Components/Management';
 import Mission from './Components/Mission';
 import Career from './Pages/Career';
 import SocialRespo from './Components/Social_Responsibility';
-import Apply from './Pages/Apply';
 import Scholarship from './Pages/Scholarship';
 
 function App() {
@@ -81,7 +80,6 @@ function App() {
         <Route path='/blogs' element={<Blogs blogs={blogData ? blogData : []} />} />
         <Route path="/blogs/:id" element={<BlogContent blogs={blogData || []} />} />
         <Route path='/careers' element={<Career jobs={jobData ? jobData:""}/>}/>
-        <Route path='/apply' element={<Apply/>}/>
         <Route path='/scholarship' element={<Scholarship/>}/>
       </Routes>
       <Footer/>
